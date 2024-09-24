@@ -237,7 +237,7 @@
       ],
       "settings": {
         "color_scheme": "",
-        "image_size": "auto",
+        "image_size": "fill",
         "image": "shopify:\/\/shop_images\/material_2.jpg",
         "allow_transparent_header": false,
         "reveal_on_scroll": true,

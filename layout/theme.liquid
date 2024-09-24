@@ -70,6 +70,27 @@
     <script type="module" src="{{ 'vendor.min.js' | asset_url }}"></script>
     <script type="module" src="{{ 'theme.js' | asset_url }}"></script>
 
+    <script type="text/javascript">
+      function registerTouchEvents() {
+        // all product card elements with secondary image
+        var productCards = document.querySelectorAll('.product-card__figure:has(.product-card__image--secondary)');
+        // add touchstart and touchend event
+        for(let productCard of productCards) {
+           productCard.addEventListener('touchstart', (e) => {
+            productCard.querySelector('.product-card__image--secondary').style.opacity = 1;
+            productCard.querySelector('.product-card__image--primary').style.opacity = 0;
+            productCard.querySelector('.product-card__image--secondary').style.visibility = 'visible';
+          });
+          productCard.addEventListener('touchend', () => {
+            productCard.querySelector('.product-card__image--secondary').style.opacity = 0;
+            productCard.querySelector('.product-card__image--primary').style.opacity = 1;
+            productCard.querySelector('.product-card__image--secondary').style.visibility = 'hidden';
+          });
+        }
+      }
+      window.onload = registerTouchEvents;
+    </script>
+
     {{ content_for_header }}
 
     {{- 'theme.css' | asset_url | stylesheet_tag: preload: true -}}

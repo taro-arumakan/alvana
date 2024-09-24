@@ -8,9 +8,9 @@
     "success_color": "#307a07",
     "warning_color": "#ed8a00",
     "error_color": "#cb2b2b",
-    "heading_font": "gill_sans_nova_n4",
+    "heading_font": "futura_n4",
     "heading_letter_spacing": 18,
-    "text_font": "zen_kaku_gothic_new_n4",
+    "text_font": "century_gothic_n4",
     "text_font_size_desktop": 14,
     "button_letter_spacing": 18,
     "cart_type": "drawer",
@@ -23,10 +23,10 @@
     "color_schemes": {
       "scheme-1": {
         "settings": {
-          "background": "#efefef",
+          "background": "#ffffff",
           "background_gradient": "",
-          "text_color": "#1c1c1c",
-          "primary_button_background": "#1c1c1c",
+          "text_color": "#5c5c5c",
+          "primary_button_background": "#5c5c5c",
           "primary_button_text_color": "#ffffff",
           "circle_button_background": "#ffffff",
           "circle_button_icon": "#1c1c1c"
@@ -34,13 +34,13 @@
       },
       "scheme-2": {
         "settings": {
-          "background": "#ffffff",
+          "background": "#f3f3f3",
           "background_gradient": "",
-          "text_color": "#1c1c1c",
-          "primary_button_background": "#1c1c1c",
+          "text_color": "#5c5c5c",
+          "primary_button_background": "#5c5c5c",
           "primary_button_text_color": "#ffffff",
           "circle_button_background": "#ffffff",
-          "circle_button_icon": "#1c1c1c"
+          "circle_button_icon": "#5c5c5c"
         }
       },
       "scheme-3": {

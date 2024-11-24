@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "slideshow": {
@@ -6,8 +15,8 @@
         "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/test_banner_pc_1.png",
-            "mobile_image": "shopify:\/\/shop_images\/test_banner_sp_1.jpg",
+            "image": "shopify://shop_images/test_banner_pc_1.png",
+            "mobile_image": "shopify://shop_images/test_banner_sp_1.jpg",
             "subheading": "",
             "title": "",
             "mobile_text_position": "place-self-center text-center",
@@ -33,8 +42,8 @@
         "slide-2": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/test_banner_pc_2.png",
-            "mobile_image": "shopify:\/\/shop_images\/test_banner_sp_2.jpg",
+            "image": "shopify://shop_images/test_banner_pc_2.png",
+            "mobile_image": "shopify://shop_images/test_banner_sp_2.jpg",
             "subheading": "",
             "title": "",
             "mobile_text_position": "place-self-center text-center",
@@ -60,8 +69,8 @@
         "image_YfY9VY": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/test_banner_pc_3.png",
-            "mobile_image": "shopify:\/\/shop_images\/test_banner_sp_3.jpg",
+            "image": "shopify://shop_images/test_banner_pc_3.png",
+            "mobile_image": "shopify://shop_images/test_banner_sp_3.jpg",
             "subheading": "",
             "title": "",
             "mobile_text_position": "place-self-center text-center",
@@ -145,7 +154,7 @@
         "richtext_WBTNR4": {
           "type": "richtext",
           "settings": {
-            "content": "<p>インドリネンを使用した洗いしの雰囲気に定評のあるライトオンスのリネン素材。<\/p><p>洗う度に風合いが変化していく生地です。<\/p>"
+            "content": "<p>インドリネンを使用した洗いしの雰囲気に定評のあるライトオンスのリネン素材。</p><p>洗う度に風合いが変化していく生地です。</p>"
           }
         },
         "link_3JndA6": {
@@ -165,7 +174,7 @@
       "settings": {
         "color_scheme": "",
         "image_size": "auto",
-        "image": "shopify:\/\/shop_images\/material_1.jpg",
+        "image": "shopify://shop_images/material_1.jpg",
         "allow_transparent_header": false,
         "reveal_on_scroll": true,
         "remove_vertical_spacing": false,
@@ -219,14 +228,14 @@
         "richtext_rKwrMa": {
           "type": "richtext",
           "settings": {
-            "content": "<p>「無垢」糸をよりあまく編むことで、風合いが柔らかくふんわりとした仕上がりに。<\/p><p>乾燥している土地だからこそ作ることができる希少な素材。<br\/>仕上げに天然の縮をかけることで、生地の風合いが完成します。<br\/>ナチュラルな素材・タオルの様な肌触りに一度触れてみてくだい。<\/p>"
+            "content": "<p>「無垢」糸をよりあまく編むことで、風合いが柔らかくふんわりとした仕上がりに。</p><p>乾燥している土地だからこそ作ることができる希少な素材。<br/>仕上げに天然の縮をかけることで、生地の風合いが完成します。<br/>ナチュラルな素材・タオルの様な肌触りに一度触れてみてくだい。</p>"
           }
         },
         "link_NdwgfH": {
           "type": "link",
           "settings": {
             "text": "VIEW PRODUCTS",
-            "url": ""
+            "url": "shopify://collections/natural-twill"
           }
         }
       },
@@ -238,7 +247,7 @@
       "settings": {
         "color_scheme": "",
         "image_size": "fill",
-        "image": "shopify:\/\/shop_images\/material_2.jpg",
+        "image": "shopify://shop_images/material_2.jpg",
         "allow_transparent_header": false,
         "reveal_on_scroll": true,
         "remove_vertical_spacing": false,
@@ -286,7 +295,7 @@
           "settings": {
             "title": "Column title",
             "heading_tag": "h3",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_url": "",
             "link_text": ""
           }
@@ -296,7 +305,7 @@
           "settings": {
             "title": "Column title",
             "heading_tag": "h3",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_url": "",
             "link_text": ""
           }
@@ -306,7 +315,7 @@
           "settings": {
             "title": "Column title",
             "heading_tag": "h3",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_url": "",
             "link_text": ""
           }
@@ -488,8 +497,8 @@
         "color_scheme": "",
         "separate_section_with_border": true,
         "subheading": "",
-        "title": "Before\/after",
-        "content": "<p>Showcase your product benefit by using before\/after image comparison.<\/p>",
+        "title": "Before/after",
+        "content": "<p>Showcase your product benefit by using before/after image comparison.</p>",
         "cursor_direction": "horizontal",
         "cursor_initial_position": 50,
         "cursor_background": "#ffffff",
@@ -504,7 +513,7 @@
           "settings": {
             "subheading": "",
             "title": "#1",
-            "content": "<p>Welcome your customers to your store by sharing temporary offers or explaining to them what your products are about.<\/p>",
+            "content": "<p>Welcome your customers to your store by sharing temporary offers or explaining to them what your products are about.</p>",
             "link_text": "",
             "link_url": "",
             "link_style": "solid"
@@ -515,7 +524,7 @@
           "settings": {
             "subheading": "",
             "title": "#2",
-            "content": "<p>Create trust with your customers by explaining the story of your brand. Share your values or what is important to you.<\/p>",
+            "content": "<p>Create trust with your customers by explaining the story of your brand. Share your values or what is important to you.</p>",
             "link_text": "",
             "link_url": "",
             "link_style": "solid"
@@ -526,7 +535,7 @@
           "settings": {
             "subheading": "",
             "title": "#3",
-            "content": "<p>Share information about your product with your customers. Describe a product, and share info about your production process...<\/p>",
+            "content": "<p>Share information about your product with your customers. Describe a product, and share info about your production process...</p>",
             "link_text": "",
             "link_url": "",
             "link_style": "solid"
@@ -582,7 +591,7 @@
         "text_alignment": "center",
         "subheading": "About",
         "title": "Showcase your product",
-        "content": "<p>Write some content about your products, collections or brand. Use image or video to create an impactful layout.<\/p>",
+        "content": "<p>Write some content about your products, collections or brand. Use image or video to create an impactful layout.</p>",
         "button_1_text": "",
         "button_1_link": "",
         "button_1_style": "solid",
@@ -600,7 +609,7 @@
         "image_size": "auto",
         "subheading": "Keep me updated",
         "title": "Newsletter",
-        "content": "<p>A short sentence describing what someone will receive by subscribing.<\/p>",
+        "content": "<p>A short sentence describing what someone will receive by subscribing.</p>",
         "button_text": "Subscribe",
         "overlay_color": "#000000",
         "overlay_opacity": 0

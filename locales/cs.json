@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "general": {
     "page": "Strana {{ page }}",
@@ -99,7 +108,7 @@
       "view_in_space": "Zobrazit ve vašem prostoru",
       "taxes_included": "Včetně DPH.",
       "taxes_excluded": "Bez DPH.",
-      "shipping_policy_html": "<a href=\"{{ link }}\" class=\"link\">Poštovné<\/a> se vypočítá při dokončení objednávky",
+      "shipping_policy_html": "<a href=\"{{ link }}\" class=\"link\">Poštovné</a> se vypočítá při dokončení objednávky",
       "size_chart": "Tabulka velikostí",
       "available_colors_count": {
         "one": "Dostupné v {{ count }} barvě",
@@ -357,9 +366,9 @@
       "view_cart": "Zobrazit košík",
       "checkout": "Přejít k placení",
       "we_accept": "Přijímáme",
-      "taxes_and_shipping_policy_at_checkout_html": "Daně a <a href=\"{{ link }}\" class=\"link\">poštovné<\/a> se vypočítají při placení",
+      "taxes_and_shipping_policy_at_checkout_html": "Daně a <a href=\"{{ link }}\" class=\"link\">poštovné</a> se vypočítají při placení",
       "taxes_included_but_shipping_at_checkout": "Daň je zahrnuta v ceně, poštovné se vypočítá při placení",
-      "taxes_included_and_shipping_policy_html": "Daň je zahrnuta v ceně. <a href=\"{{ link }}\" class=\"link\">Poštovné<\/a> se vypočítá při placení.",
+      "taxes_included_and_shipping_policy_html": "Daň je zahrnuta v ceně. <a href=\"{{ link }}\" class=\"link\">Poštovné</a> se vypočítá při placení.",
       "taxes_and_shipping_at_checkout": "Daň a poštovné se vypočítají při placení"
     },
     "order": {
@@ -462,7 +471,7 @@
   },
   "sections": {
     "before_after": {
-      "not_enough_blocks": "Pokud chcete zobrazit srovnání před\/po, přidejte do sekce další bloky.",
+      "not_enough_blocks": "Pokud chcete zobrazit srovnání před/po, přidejte do sekce další bloky.",
       "percentage_shown": "Procento zobrazené fotografie po",
       "cursor_accessibility_text": "Použijte klávesy šipka vlevo a vpravo k navigaci mezi před a po fotografiemi."
     },

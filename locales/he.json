@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "general": {
     "page": "עמוד {{ page }}",
@@ -99,7 +108,7 @@
       "view_in_space": "View in your space",
       "taxes_included": "כולל מס.",
       "taxes_excluded": "לא כולל מס.",
-      "shipping_policy_html": "<a href=\"{{ link }}\" class=\"link\">דמי משלוח יחושבו<\/a> בעת התשלום",
+      "shipping_policy_html": "<a href=\"{{ link }}\" class=\"link\">דמי משלוח יחושבו</a> בעת התשלום",
       "size_chart": "טבלת מידות",
       "available_colors_count": {
         "one": "צבע {{ count }} זמין",
@@ -347,9 +356,9 @@
       "view_cart": "הצג עגלת קניות",
       "checkout": "לתשלום",
       "we_accept": "אנחנו מקבלים",
-      "taxes_and_shipping_policy_at_checkout_html": "מסים ו<a href=\"{{ link }}\" class=\"link\">דמי משלוח<\/a> יחושבו בעת התשלום",
+      "taxes_and_shipping_policy_at_checkout_html": "מסים ו<a href=\"{{ link }}\" class=\"link\">דמי משלוח</a> יחושבו בעת התשלום",
       "taxes_included_but_shipping_at_checkout": "המסים הכלולים ודמי משלוח יחושבו בעת התשלום",
-      "taxes_included_and_shipping_policy_html": "המס כלול. <a href=\"{{ link }}\" class=\"link\">דמי משלוח<\/a> יחושבו בעת התשלום.",
+      "taxes_included_and_shipping_policy_html": "המס כלול. <a href=\"{{ link }}\" class=\"link\">דמי משלוח</a> יחושבו בעת התשלום.",
       "taxes_and_shipping_at_checkout": "המסים ודמי משלוח יחושבו בעת התשלום"
     },
     "order": {
@@ -360,7 +369,7 @@
     },
     "free_shipping_bar": {
       "limit_unreached_html": "קנה בעוד {{ remaining_amount }} ותיהנה ממשלוח חינם!",
-      "limit_reached_html": "את\/ה זכאי\/ת לקבל משלוח חינם."
+      "limit_reached_html": "את/ה זכאי/ת לקבל משלוח חינם."
     },
     "shipping_estimator": {
       "estimate_shipping": "שיערוך המשלוח",
@@ -433,7 +442,7 @@
   },
   "password": {
     "general": {
-      "follow_us": "עקוב\/עקבי אחרינו",
+      "follow_us": "עקוב/עקבי אחרינו",
       "powered_by": "חנות זו מופעלת על-ידי",
       "store_owner": "בעל החנות?",
       "login": "כניסה"
@@ -448,7 +457,7 @@
   },
   "sections": {
     "before_after": {
-      "not_enough_blocks": "להצגה לפני\/אחרי ההשוואה, נא להוסיף בלוקים נוספים בסעיף.",
+      "not_enough_blocks": "להצגה לפני/אחרי ההשוואה, נא להוסיף בלוקים נוספים בסעיף.",
       "percentage_shown": "אחוז המוצג מהתמונה שאחרי",
       "cursor_accessibility_text": " השתמש במקשי החץ שמאלה וימינה כדי לנווט בין התמונות לפני ואחר"
     },

@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "general": {
     "page": "{{ page }}. Sayfa",
@@ -7,7 +16,7 @@
       "pagination": "Sayfalarda gezinme",
       "go_to_page": "{{ index }}. sayfaya git",
       "go_to_item": "{{ index }} ögesine git",
-      "item_nth_of_count": "{{ index }}\/{{ count }}. öge",
+      "item_nth_of_count": "{{ index }}/{{ count }}. öge",
       "drag": "Sürükle",
       "close": "Kapat",
       "next": "İleri",
@@ -38,7 +47,7 @@
       "share_email": "E-posta ile paylaş"
     },
     "rating": {
-      "info": "{{ rating_value }}\/{{ rating_max }} yıldız"
+      "info": "{{ rating_value }}/{{ rating_max }} yıldız"
     },
     "newsletter": {
       "email": "E-posta",
@@ -99,7 +108,7 @@
       "view_in_space": "Kendi alanınızda görüntüleyin",
       "taxes_included": "Vergi dahil.",
       "taxes_excluded": "Vergi hariç.",
-      "shipping_policy_html": "<a href=\"{{ link }}\" class=\"link\">Gönderi ücreti<\/a> ödeme sırasında hesaplanır",
+      "shipping_policy_html": "<a href=\"{{ link }}\" class=\"link\">Gönderi ücreti</a> ödeme sırasında hesaplanır",
       "size_chart": "Beden tablosu",
       "available_colors_count": {
         "one": "{{ count }} renk mevcut",
@@ -347,9 +356,9 @@
       "view_cart": "Sepeti görüntüle",
       "checkout": "Ödeme yap",
       "we_accept": "Kabul ettiklerimiz:",
-      "taxes_and_shipping_policy_at_checkout_html": "Vergiler ve <a href=\"{{ link }}\" class=\"link\">gönderi ücreti<\/a> ödeme sırasında hesaplanır",
+      "taxes_and_shipping_policy_at_checkout_html": "Vergiler ve <a href=\"{{ link }}\" class=\"link\">gönderi ücreti</a> ödeme sırasında hesaplanır",
       "taxes_included_but_shipping_at_checkout": "Vergi dahildir ve gönderi ücreti ödeme sırasında hesaplanır",
-      "taxes_included_and_shipping_policy_html": "Vergi dahildir. <a href=\"{{ link }}\" class=\"link\">Gönderi ücreti<\/a> ödeme sırasında hesaplanır.",
+      "taxes_included_and_shipping_policy_html": "Vergi dahildir. <a href=\"{{ link }}\" class=\"link\">Gönderi ücreti</a> ödeme sırasında hesaplanır.",
       "taxes_and_shipping_at_checkout": "Vergiler ve gönderi ücreti ödeme sırasında hesaplanır"
     },
     "order": {
@@ -448,7 +457,7 @@
   },
   "sections": {
     "before_after": {
-      "not_enough_blocks": "Önce\/sonra karşılaştırmasını göstermek için lütfen bölüme daha fazla blok ekleyin.",
+      "not_enough_blocks": "Önce/sonra karşılaştırmasını göstermek için lütfen bölüme daha fazla blok ekleyin.",
       "percentage_shown": "Gösterilen sonra fotoğrafının yüzdesi",
       "cursor_accessibility_text": "Önce ve sonra fotoğrafları arasında gezinmek için sol ve sağ ok tuşlarını kullanın."
     },

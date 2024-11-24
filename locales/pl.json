@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "general": {
     "page": "Strona {{ page }}",
@@ -99,7 +108,7 @@
       "view_in_space": "Zobacz w przestrzeni",
       "taxes_included": "W tym podatek.",
       "taxes_excluded": "Bez podatku.",
-      "shipping_policy_html": "<a href=\"{{ link }}\" class=\"link\">Koszt dostawy<\/a> przy kasie",
+      "shipping_policy_html": "<a href=\"{{ link }}\" class=\"link\">Koszt dostawy</a> przy kasie",
       "size_chart": "Tabela rozmiarów",
       "available_colors_count": {
         "one": "{{ count }} dostępny kolor",
@@ -345,9 +354,9 @@
       "weight": "Waga",
       "subtotal": "Wartość produktów",
       "total": "Total",
-      "taxes_and_shipping_policy_at_checkout_html": "Podatki i koszty <a href=\"{{ link }}\" class=\"link\">wysyłki<\/a> obliczane przy realizacji zakupu",
+      "taxes_and_shipping_policy_at_checkout_html": "Podatki i koszty <a href=\"{{ link }}\" class=\"link\">wysyłki</a> obliczane przy realizacji zakupu",
       "taxes_included_but_shipping_at_checkout": "Podatek wliczony w cenę i koszty wysyłki obliczone przy realizacji zakupu",
-      "taxes_included_and_shipping_policy_html": "Z wliczonym podatkiem. <a href=\"{{ link }}\" class=\"link\">Koszt wysyłki<\/a> obliczony przy realizacji zakupu.",
+      "taxes_included_and_shipping_policy_html": "Z wliczonym podatkiem. <a href=\"{{ link }}\" class=\"link\">Koszt wysyłki</a> obliczony przy realizacji zakupu.",
       "taxes_and_shipping_at_checkout": "Podatki i koszty wysyłki obliczane przy realizacji zakupu",
       "add_order_note": "Dodaj uwagi do zamówienia",
       "edit_order_note": "Edytuj uwagi do zamówienia",
@@ -459,7 +468,7 @@
   },
   "sections": {
     "before_after": {
-      "not_enough_blocks": "Aby wyświetlić porównanie przed\/po, dodaj więcej bloków w sekcji.",
+      "not_enough_blocks": "Aby wyświetlić porównanie przed/po, dodaj więcej bloków w sekcji.",
       "percentage_shown": "Procent wyświetlanego zdjęcia „po”",
       "cursor_accessibility_text": "Użyj klawiszy strzałek w lewo i w prawo, aby nawigować między zdjęciami przed i po."
     },

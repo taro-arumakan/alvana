@@ -122,7 +122,15 @@ Thumbnail specific parameters:
 {%- if url == blank -%}
   {%- capture variant_attributes -%}
     {%- if output_variant_media and option_value != blank and variant != blank -%}
-      data-variant-id="{{ variant.id }}" {% if variant.featured_media %}data-variant-media="{{ variant.featured_media | json | escape }}"{% endif %}
+      {%- liquid
+        assign variant_media = variant.featured_media
+
+        if variant_media
+          assign secondary_variant_media = variant.product.media[variant_media.position] | default: variant.product.media[1]
+        endif
+      -%}
+
+      data-variant-id="{{ variant.id }}" {% if variant_media %}data-variant-media="{{ variant_media | json | escape }}" {% if secondary_variant_media %}data-variant-secondary-media="{{ secondary_variant_media | json | escape }}"{% endif %}{% endif %}
     {%- endif -%}
   {%- endcapture -%}
 

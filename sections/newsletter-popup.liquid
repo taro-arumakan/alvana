@@ -32,30 +32,32 @@
           </div>
         {%- endif -%}
 
-        {%- form 'customer', id: newsletter_id, class: 'form' -%}
-          {%- if form.posted_successfully? -%}
-            {%- capture success_message -%}{{ 'general.newsletter.subscribed_successfully' | t }}{%- endcapture -%}
-            {%- render 'banner', content: success_message, status: 'success', text_alignment: 'center' -%}
+        {%- if section.settings.show_newsletter_form -%}
+          {%- form 'customer', id: newsletter_id, class: 'form' -%}
+            {%- if form.posted_successfully? -%}
+              {%- capture success_message -%}{{ 'general.newsletter.subscribed_successfully' | t }}{%- endcapture -%}
+              {%- render 'banner', content: success_message, status: 'success', text_alignment: 'center' -%}
 
-            <script>
-              localStorage.setItem('theme:popup-filled', 'true');
-            </script>
-          {%- else -%}
-            {%- if form.errors -%}
-              {%- assign content = form.errors | default_errors -%}
-              {%- render 'banner', status: 'error', content: content, text_alignment: 'center' -%}
+              <script>
+                localStorage.setItem('theme:popup-filled', 'true');
+              </script>
+            {%- else -%}
+              {%- if form.errors -%}
+                {%- assign content = form.errors | default_errors -%}
+                {%- render 'banner', status: 'error', content: content, text_alignment: 'center' -%}
+              {%- endif -%}
+
+              <div class="fieldset">
+                <input type="hidden" name="contact[tags]" value="newsletter">
+
+                {%- assign label = 'blog.comments.email' | t -%}
+                {%- render 'input', type: 'email', name: 'contact[email]', label: label, value: customer.email, required: true, autocomplete: 'email' -%}
+              </div>
+
+              {%- render 'button', content: section.settings.button_text, type: 'submit' -%}
             {%- endif -%}
-
-            <div class="fieldset">
-              <input type="hidden" name="contact[tags]" value="newsletter">
-
-              {%- assign label = 'blog.comments.email' | t -%}
-              {%- render 'input', type: 'email', name: 'contact[email]', label: label, value: customer.email, required: true, autocomplete: 'email' -%}
-            </div>
-
-            {%- render 'button', content: section.settings.button_text, type: 'submit' -%}
-          {%- endif -%}
-        {%- endform -%}
+          {%- endform -%}
+        {%- endif -%}
       </div>
     </newsletter-popup>
   {%- endunless -%}
@@ -102,6 +104,12 @@
       "type": "checkbox",
       "id": "show_only_once",
       "label": "t:sections.newsletter_popup.show_only_once",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_newsletter_form",
+      "label": "t:sections.newsletter_popup.show_newsletter_form",
       "default": true
     },
     {

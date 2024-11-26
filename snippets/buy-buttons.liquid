@@ -58,7 +58,7 @@ Supported variables
             {%- assign checkbox_label = 'gift_card.recipient.checkbox' | t -%}
             {%- render 'checkbox', label: checkbox_label, name: 'properties[__shopify_send_gift_card_to_recipient]' -%}
 
-            <div class="gift-card-recipient__fields js:hidden">
+            <div class="gift-card-recipient__fields" hidden>
               <div class="fieldset">
                 {%- liquid
                   assign recipient_email_label = 'gift_card.recipient.email_label' | t

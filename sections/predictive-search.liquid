@@ -124,7 +124,7 @@ Nothing
       </x-tabs>
     </div>
   {%- else -%}
-    <p class="predictive-search__no-results text-lg">{{ 'search.general.no_results' | t }}</p>
+    <p class="predictive-search__no-results text-lg">{{ 'search.general.no_results' | t: terms: search.terms }}</p>
   {%- endif -%}
 {%- elsif search.performed -%}
   {%- if search.results_count > 0 -%}
@@ -193,7 +193,7 @@ Nothing
       </x-tabs>
     </div>
   {%- else -%}
-    <p class="predictive-search__no-results text-lg">{{ 'search.general.no_results' | t }}</p>
+    <p class="predictive-search__no-results text-lg">{{ 'search.general.no_results' | t: terms: search.terms }}</p>
   {%- endif -%}
 {%- endif -%}
 

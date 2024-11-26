@@ -149,7 +149,7 @@ Supported variables
 
           {%- when 'badges' -%}
             {%- if product != blank -%}
-              {%- render 'product-badges', product: product, variant: product.selected_or_first_available_variant, types: 'custom,discount' -%}
+              {%- render 'product-badges', product: product, variant: product.selected_or_first_available_variant, types: 'custom,discount', context: 'product' -%}
             {%- endif -%}
 
           {%- when 'price' -%}

@@ -55,7 +55,7 @@ Supported variables
   {%- if product.media.size > 0 -%}
     <div class="product-card__figure">
       {%- if show_badges -%}
-        {%- render 'product-badges', product: product, vertical: true -%}
+        {%- render 'product-badges', product: product, vertical: true, context: 'card' -%}
       {%- endif -%}
 
       <a href="{{ product.url }}" class="product-card__media" data-instant>

@@ -40,7 +40,7 @@ Supported variables
       {{- options -}}
     {%- else -%}
       {%- if show_empty_value -%}
-        <option value="" selected disabled>{{ label }}</option>
+        <option value="" selected disabled>{% if required %}{{ label }}{% else %}--{% endif %}</option>
       {%- endif -%}
 
       {%- for value in option_values -%}

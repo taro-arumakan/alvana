@@ -1040,6 +1040,7 @@ var ScrollCarousel = class extends HTMLElement {
     this.allCells.forEach((cell, index) => {
       cell.toggleAttribute("hidden", indexes.includes(index));
     });
+    __privateSet(this, _forceChangeEvent, true);
     this.dispatchEvent(new CustomEvent("carousel:filter", { detail: { filteredIndexes: indexes } }));
   }
 };
@@ -1243,10 +1244,12 @@ adaptHeight_fn = function() {
   }
 };
 preloadImages_fn2 = function() {
-  const previousSlide = this.cells[Math.max(this.selectedIndex - 1, 0)], nextSlide = this.cells[Math.min(this.selectedIndex + 1, this.cells.length - 1)];
-  [previousSlide, this.selectedCell, nextSlide].filter((item) => item !== null).forEach((item) => {
-    Array.from(item.querySelectorAll('img[loading="lazy"]')).forEach((img) => img.removeAttribute("loading"));
-    Array.from(item.querySelectorAll('video[preload="none"]')).forEach((video) => video.setAttribute("preload", "metadata"));
+  requestAnimationFrame(() => {
+    const previousSlide = this.cells[Math.max(this.selectedIndex - 1, 0)], nextSlide = this.cells[Math.min(this.selectedIndex + 1, this.cells.length - 1)];
+    [previousSlide, this.selectedCell, nextSlide].filter((item) => item !== null).forEach((item) => {
+      Array.from(item.querySelectorAll('img[loading="lazy"]')).forEach((img) => img.removeAttribute("loading"));
+      Array.from(item.querySelectorAll('video[preload="none"]')).forEach((video) => video.setAttribute("preload", "metadata"));
+    });
   });
 };
 if (!window.customElements.get("scroll-carousel")) {
@@ -2298,6 +2301,7 @@ var QuantitySelector = class extends HTMLElement {
     __privateSet(this, _inputElement, this.querySelector("input"));
     __privateGet(this, _decreaseButton)?.addEventListener("click", __privateMethod(this, _QuantitySelector_instances, onDecreaseQuantity_fn).bind(this), { signal: __privateGet(this, _abortController5).signal });
     __privateGet(this, _increaseButton)?.addEventListener("click", __privateMethod(this, _QuantitySelector_instances, onIncreaseQuantity_fn).bind(this), { signal: __privateGet(this, _abortController5).signal });
+    __privateGet(this, _inputElement)?.addEventListener("input", () => __privateMethod(this, _QuantitySelector_instances, updateUI_fn).call(this), { signal: __privateGet(this, _abortController5).signal });
   }
   disconnectedCallback() {
     __privateGet(this, _abortController5).abort();
@@ -2317,7 +2321,7 @@ onIncreaseQuantity_fn = function() {
   __privateMethod(this, _QuantitySelector_instances, updateUI_fn).call(this);
 };
 updateUI_fn = function() {
-  __privateGet(this, _decreaseButton).disabled = __privateGet(this, _inputElement).quantity <= 1;
+  __privateGet(this, _decreaseButton).disabled = __privateGet(this, _inputElement).value <= 1;
 };
 var _QuantityInput_instances, inputElement_get, onValueInput_fn;
 var QuantityInput = class extends HTMLElement {
@@ -2458,9 +2462,9 @@ _ImageParallax_instances = new WeakSet();
 setupParallax_fn = function() {
   const [scale, translate] = [1.3, 0.15 * 100 / 1.3], isFirstSection = this.closest(".shopify-section").matches(":first-child");
   scroll(
-    animate8(this.firstElementChild, { transform: [`scale(${scale}) translateY(-${translate}%)`, `scale(${scale}) translateY(${translate}%)`] }, { easing: "linear" }),
+    animate8(this.querySelector("img"), { transform: [`scale(${scale}) translateY(-${translate}%)`, `scale(${scale}) translateY(${translate}%)`] }, { easing: "linear" }),
     {
-      target: this.firstElementChild,
+      target: this.querySelector("img"),
       offset: [isFirstSection ? "start start" : "start end", "end start"]
     }
   );
@@ -2508,7 +2512,7 @@ _recipientFieldsContainer = new WeakMap();
 _GiftCardRecipient_instances = new WeakSet();
 synchronizeProperties_fn = function() {
   __privateGet(this, _recipientOtherProperties).forEach((property) => property.disabled = !__privateGet(this, _recipientCheckbox).checked);
-  __privateGet(this, _recipientFieldsContainer).classList.toggle("js:hidden", !__privateGet(this, _recipientCheckbox).checked);
+  __privateGet(this, _recipientFieldsContainer).toggleAttribute("hidden", !__privateGet(this, _recipientCheckbox).checked);
 };
 formatDate_fn = function(date) {
   const offset = date.getTimezoneOffset();
@@ -2556,10 +2560,14 @@ onSwatchChanged_fn = async function(event, target) {
   if (!target.hasAttribute("data-variant-media")) {
     return;
   }
-  const newMedia = JSON.parse(target.getAttribute("data-variant-media")), primaryMediaElement = this.querySelector(".product-card__image--primary"), secondaryMediaElement = this.querySelector(".product-card__image--secondary"), newPrimaryMediaElement = __privateMethod(this, _ProductCard_instances, createMediaImg_fn).call(this, newMedia, primaryMediaElement.className, primaryMediaElement.sizes);
+  let newMedia = JSON.parse(target.getAttribute("data-variant-media")), primaryMediaElement = this.querySelector(".product-card__image--primary"), secondaryMediaElement = this.querySelector(".product-card__image--secondary"), newPrimaryMediaElement = __privateMethod(this, _ProductCard_instances, createMediaImg_fn).call(this, newMedia, primaryMediaElement.className, primaryMediaElement.sizes), newSecondaryMediaElement = null;
+  if (target.hasAttribute("data-variant-secondary-media")) {
+    let newSecondaryMedia = JSON.parse(target.getAttribute("data-variant-secondary-media"));
+    newSecondaryMediaElement = __privateMethod(this, _ProductCard_instances, createMediaImg_fn).call(this, newSecondaryMedia, secondaryMediaElement.className, secondaryMediaElement.sizes);
+  }
   if (primaryMediaElement.src !== newPrimaryMediaElement.src) {
-    if (secondaryMediaElement) {
-      secondaryMediaElement.replaceWith(__privateMethod(this, _ProductCard_instances, createMediaImg_fn).call(this, newMedia, secondaryMediaElement.className, secondaryMediaElement.sizes));
+    if (secondaryMediaElement && newSecondaryMediaElement) {
+      secondaryMediaElement.replaceWith(newSecondaryMediaElement);
     }
     await primaryMediaElement.animate({ opacity: [1, 0] }, { duration: 150, easing: "ease-in", fill: "forwards" }).finished;
     await new Promise((resolve) => newPrimaryMediaElement.complete ? resolve() : newPrimaryMediaElement.onload = () => resolve());
@@ -3220,6 +3228,14 @@ var _VariantPicker = class _VariantPicker extends HTMLElement {
         newUrl.searchParams.set("variant", __privateGet(this, _selectedVariant).id);
         window.history.replaceState({ path: newUrl.toString() }, "", newUrl.toString());
       }
+    }
+    __privateGet(this, _form).dispatchEvent(new CustomEvent("product:rerender", {
+      detail: {
+        htmlFragment: newContent,
+        productChange
+      }
+    }));
+    if (!productChange) {
       __privateGet(this, _form).dispatchEvent(new CustomEvent("variant:change", {
         bubbles: true,
         detail: {
@@ -3229,12 +3245,6 @@ var _VariantPicker = class _VariantPicker extends HTMLElement {
         }
       }));
     }
-    __privateGet(this, _form).dispatchEvent(new CustomEvent("product:rerender", {
-      detail: {
-        htmlFragment: newContent,
-        productChange
-      }
-    }));
     Shopify?.PaymentButton?.init();
   }
 };
@@ -3992,23 +4002,22 @@ if (!window.customElements.get("announcement-bar-carousel")) {
 
 // js/sections/before-after-image.js
 import { animate as animate12, inView as inView9 } from "vendor";
-var _onPointerMoveListener, _onTouchMoveListener, _touchStartTimestamp, _BeforeAfter_instances, onPointerDown_fn, onPointerMove_fn, onTouchMove_fn, onPointerUp_fn, onKeyboardNavigation_fn2, calculatePosition_fn, animateInitialPosition_fn;
+var _onPointerMoveListener, _touchStartTimestamp, _BeforeAfter_instances, onPointerDown_fn, onPointerMove_fn, onTouchStart_fn, onPointerUp_fn, onKeyboardNavigation_fn2, calculatePosition_fn, animateInitialPosition_fn;
 var BeforeAfter = class extends HTMLElement {
   constructor() {
     super();
     __privateAdd(this, _BeforeAfter_instances);
     __privateAdd(this, _onPointerMoveListener, __privateMethod(this, _BeforeAfter_instances, onPointerMove_fn).bind(this));
-    __privateAdd(this, _onTouchMoveListener, __privateMethod(this, _BeforeAfter_instances, onTouchMove_fn).bind(this));
     __privateAdd(this, _touchStartTimestamp, 0);
     this.addEventListener("pointerdown", __privateMethod(this, _BeforeAfter_instances, onPointerDown_fn));
     this.addEventListener("keydown", __privateMethod(this, _BeforeAfter_instances, onKeyboardNavigation_fn2));
+    this.addEventListener("touchstart", __privateMethod(this, _BeforeAfter_instances, onTouchStart_fn), { passive: false });
   }
   connectedCallback() {
     inView9(this, __privateMethod(this, _BeforeAfter_instances, animateInitialPosition_fn).bind(this));
   }
 };
 _onPointerMoveListener = new WeakMap();
-_onTouchMoveListener = new WeakMap();
 _touchStartTimestamp = new WeakMap();
 _BeforeAfter_instances = new WeakSet();
 onPointerDown_fn = function(event) {
@@ -4019,24 +4028,21 @@ onPointerDown_fn = function(event) {
   if (matchesMediaQuery("supports-hover")) {
     document.addEventListener("pointermove", __privateGet(this, _onPointerMoveListener));
     __privateMethod(this, _BeforeAfter_instances, calculatePosition_fn).call(this, event);
-  } else {
-    const cursor = this.querySelector(".before-after__cursor");
-    if (event.target === cursor || cursor.contains(event.target)) {
-      document.addEventListener("pointermove", __privateGet(this, _onPointerMoveListener));
-      this.addEventListener("touchmove", __privateGet(this, _onTouchMoveListener), { passive: false });
-    } else {
-      __privateSet(this, _touchStartTimestamp, event.timeStamp);
-    }
   }
 };
 onPointerMove_fn = function(event) {
   __privateMethod(this, _BeforeAfter_instances, calculatePosition_fn).call(this, event);
 };
-onTouchMove_fn = function(event) {
-  event.preventDefault();
+onTouchStart_fn = function(event) {
+  const cursor = this.querySelector(".before-after__cursor");
+  if (event.target === cursor || cursor.contains(event.target)) {
+    event.preventDefault();
+    document.addEventListener("pointermove", __privateGet(this, _onPointerMoveListener));
+  } else {
+    __privateSet(this, _touchStartTimestamp, event.timeStamp);
+  }
 };
 onPointerUp_fn = function(event) {
-  this.removeEventListener("touchmove", __privateGet(this, _onTouchMoveListener));
   document.removeEventListener("pointermove", __privateGet(this, _onPointerMoveListener));
   if (!matchesMediaQuery("supports-hover")) {
     if (event.timeStamp - __privateGet(this, _touchStartTimestamp) <= 250) {
@@ -4203,10 +4209,10 @@ var CollectionBanner = class extends HTMLElement {
 };
 _CollectionBanner_instances = new WeakSet();
 reveal_fn2 = async function() {
-  const image = this.querySelector(".content-over-media > picture img"), content = this.querySelector(".content-over-media > .prose");
+  const image = this.querySelector(".content-over-media > picture img, .content-over-media > image-parallax img"), hasParallax = this.querySelector(".content-over-media image-parallax") !== null, content = this.querySelector(".content-over-media > .prose");
   await imageLoaded(image);
   const transformEffect = 0.15 * 100 / 1.3;
-  const imageTransform = image.getAttribute("is") === "image-parallax" ? [`scale(1.5) translateY(-${transformEffect}%)`, `scale(1.3) translateY(-${transformEffect}%)`] : ["scale(1.2)", "scale(1)"];
+  const imageTransform = hasParallax ? [`scale(1.5) translateY(-${transformEffect}%)`, `scale(1.3) translateY(-${transformEffect}%)`] : ["scale(1.2)", "scale(1)"];
   return timeline8([
     [this, { opacity: 1 }, { duration: 0, easing: [0.25, 0.46, 0.45, 0.94] }],
     [image, { opacity: [0, 1], transform: imageTransform }, { duration: 0.8, delay: 0.25, at: "<", easing: [0.25, 0.46, 0.45, 0.94] }],

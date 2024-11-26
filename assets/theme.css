@@ -448,29 +448,16 @@ height-observer {
   }
 }
 
-.shopify-payment-button .wallet-button-fade-in {
-  animation: none !important;
-}
-
 .shopify-payment-button__button {
   vertical-align: top;
   width: 100%;
   min-height: calc(1lh + 1.3rem + 2px);
-  animation: none !important;
 }
 
-.shopify-payment-button__button--branded:focus-within {
-  outline: 2px solid highlight;
-  outline: 5px auto -webkit-focus-ring-color;
-}
-
-.shopify-payment-button__button--branded [role="button"] {
-  border-radius: var(--button-border-radius);
-  padding: .875rem 1.75rem;
-}
-
-.shopify-payment-button__more-options[aria-hidden="true"] {
-  display: none;
+shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
+  --shopify-accelerated-checkout-button-block-size: 44px;
+  --shopify-accelerated-checkout-button-border-radius: var(--button-border-radius);
+  --shopify-accelerated-checkout-button-box-shadow: none;
 }
 
 @keyframes animateIconInline {
@@ -589,11 +576,11 @@ height-observer {
   inset: 0;
 }
 
-.content-over-media > picture {
+.content-over-media > picture, .content-over-media > image-parallax picture {
   display: contents;
 }
 
-.content-over-media > :is(img, video, iframe, svg, video-media), .content-over-media > picture img {
+.content-over-media > :is(img, video, iframe, svg, video-media), .content-over-media > picture img, .content-over-media > image-parallax img {
   height: var(--content-over-media-height, auto);
   overflow-wrap: anywhere;
   object-fit: cover;
@@ -608,7 +595,7 @@ height-observer {
   max-height: 100%;
 }
 
-.content-over-media > :not(img, video, iframe, svg, video-media, picture) {
+.content-over-media > :not(img, video, iframe, svg, video-media, picture, image-parallax) {
   max-width: var(--content-over-media-content-max-width, 48rem);
   z-index: 1;
   text-shadow: 0 1px rgb(var(--content-over-media-text-shadow) / 50%);
@@ -626,12 +613,12 @@ height-observer {
   }
 }
 
-.content-over-media > video-media:not([autoplay]) ~ :not(img, video, iframe, svg, video-media, picture) {
+.content-over-media > video-media:not([autoplay]) ~ :not(img, video, iframe, svg, video-media, picture, image-parallax) {
   pointer-events: none;
   transition: opacity .2s ease-in-out, visibility .2s ease-in-out;
 }
 
-.content-over-media > video-media:not([autoplay])[loaded] ~ :not(img, video, iframe, svg, video-media, picture) {
+.content-over-media > video-media:not([autoplay])[loaded] ~ :not(img, video, iframe, svg, video-media, picture, image-parallax) {
   opacity: 0;
   visibility: hidden;
 }
@@ -644,7 +631,7 @@ height-observer {
   transform: scale(1.1);
 }
 
-.shopify-section:first-child [allow-transparent-header] > .content-over-media > :not(img, video, iframe, svg, video-media, picture) {
+.shopify-section:first-child [allow-transparent-header] > .content-over-media > :not(img, video, iframe, svg, video-media, picture, image-parallax) {
   padding-block-start: var(--header-height, 0px);
 }
 
@@ -2499,7 +2486,7 @@ model-media model-viewer, model-media .shopify-model-viewer-ui {
   margin-block-start: 1rem;
 }
 
-.prose :where(* + span:not(:empty)), .prose :is(.link, img) {
+.prose :where(* + span:not(:empty, .metafield-multi_line_text_field)), .prose :is(.link, img) {
   display: inline-block;
 }
 
@@ -2533,6 +2520,10 @@ model-media model-viewer, model-media .shopify-model-viewer-ui {
 .prose :is(ol, ul) {
   row-gap: .4em;
   display: grid;
+}
+
+.prose br {
+  margin-block: 0 !important;
 }
 
 .prose figcaption {
@@ -2574,6 +2565,12 @@ model-media model-viewer, model-media .shopify-model-viewer-ui {
   transition: background-size .3s ease-in-out;
 }
 
+@supports (height: 1lh) {
+  :is(.link, .prose a:not(.h1, .h2, .h3, .h4, .h5, .h6, .button, .link-faded, .link-faded-reverse)) {
+    background: linear-gradient(to right, currentColor, currentColor) 0 min(100%, 1.2lh) / 100% 1px no-repeat;
+  }
+}
+
 @media screen and (pointer: fine) {
   :is(.link, .prose a:not(.h1, .h2, .h3, .h4, .h5, .h6, .button, .link-faded, .link-faded-reverse)):hover {
     background-size: 0 1px;
@@ -2584,6 +2581,12 @@ model-media model-viewer, model-media .shopify-model-viewer-ui {
   text-underline: none;
   background: linear-gradient(to right, currentColor, currentColor) 0 min(100%, 1.35em) / 0 1px no-repeat;
   transition: background-size .3s ease-in-out;
+}
+
+@supports (height: 1lh) {
+  .link-reverse {
+    background: linear-gradient(to right, currentColor, currentColor) 0 min(100%, 1.2lh) / 0 1px no-repeat;
+  }
 }
 
 @media screen and (pointer: fine) {
@@ -4662,7 +4665,7 @@ product-rerender {
   margin-block-end: calc(-1 * var(--header-height, 0px));
 }
 
-:has(.shopify-section:first-child [allow-transparent-header]):not(:has(.shopify-section--header + .shopify-section-group-header-group)) .header:not(:hover, .is-solid, :has([open])) {
+:has(.shopify-section:first-child [allow-transparent-header]):not(:has(.shopify-section--header + .shopify-section-group-header-group)) .header:not(:hover, .is-solid, :has(.header__primary-nav [open])) {
   --header-show-transparent-logo: 1;
   --header-separation-border-color: 0 0 0 / 0;
   --background: 0 0 0 / 0;
@@ -4671,7 +4674,7 @@ product-rerender {
   --text-color: var(--header-transparent-header-text-color);
 }
 
-:has(.shopify-section:first-child [allow-transparent-header]):not(:has(.shopify-section--header + .shopify-section-group-header-group)) .header:not(:hover, .is-solid, :has([open])) .link-faded {
+:has(.shopify-section:first-child [allow-transparent-header]):not(:has(.shopify-section--header + .shopify-section-group-header-group)) .header:not(:hover, .is-solid, :has(.header__primary-nav [open])) .link-faded {
   color: currentColor;
   transition: none;
 }

@@ -111,7 +111,13 @@ Supported variables
                     <span>{{- option_value -}}</span>
 
                     {%- if option_value.available == false -%}
-                      <span>{{- 'product.general.sold_out_badge' | t -}}</span>
+                      <span>
+                        {%- if option_value.variant == nil -%}
+                          {{- 'product.general.unavailable_button' | t -}}
+                        {%- else -%}
+                          {{- 'product.general.sold_out_badge' | t -}}
+                        {%- endif -%}
+                      </span>
                     {%- endif -%}
                   {%- endcapture -%}
 
@@ -129,7 +135,6 @@ Supported variables
                     {%- else -%}
                       <label class="popover__value-option h-stack justify-between gap-2" for="{{ param_name }}-{{ option_value.id }}">
                         <input class="sr-only" form="{{ form_id }}" type="radio" id="{{ param_name }}-{{ option_value.id }}" name="{{ param_name }}" {% if option_value.product_url != blank %}data-product-url="{{ option_value.product_url | escape }}"{% endif %} data-option-position="{{ option.position }}" value="{{ option_value.id }}" {% if option_value.selected %}checked{% endif %}>
-
                         {{- option_markup -}}
                       </label>
                     {%- endif -%}
@@ -171,16 +176,18 @@ Supported variables
       </fieldset>
     {%- endfor -%}
 
-    <noscript>
-      {%- assign input_label = 'product.general.variant' | t -%}
+    {%- unless request.design_mode -%}
+      <noscript>
+        {%- assign input_label = 'product.general.variant' | t -%}
 
-      {%- capture select_options -%}
-        {%- for variant in product.variants -%}
-          <option {% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %} {% unless variant.available %}disabled="disabled"{% endunless %} value="{{ variant.id }}">{{ variant.title }} - {{ variant.price | money }}</option>
-        {%- endfor -%}
-      {%- endcapture -%}
+        {%- capture select_options -%}
+          {%- for variant in product.variants -%}
+            <option {% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %} {% unless variant.available %}disabled="disabled"{% endunless %} value="{{ variant.id }}">{{ variant.title }} - {{ variant.price | money }}</option>
+          {%- endfor -%}
+        {%- endcapture -%}
 
-      {%- render 'select', label: input_label, form: form_id, name: 'id', options: select_options -%}
-    </noscript>
+        {%- render 'select', label: input_label, form: form_id, name: 'id', options: select_options -%}
+      </noscript>
+    {%- endunless -%}
   </variant-picker>
 {%- endunless -%}

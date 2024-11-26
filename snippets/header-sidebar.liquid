@@ -13,6 +13,7 @@ Supported variables
 * menu: the menu to render
 * color_scheme: the color scheme to use for the sidebar
 * show_dividers: whether dividers are shown for the collapsible
+* open_second_level_menus: if true, second level dropdown are open by default
 {%- endcomment -%}
 
 {%- comment -%}
@@ -127,7 +128,7 @@ therefore using a different structure for the Shadow DOM template
                   <li>
                     {%- if sub_link.links.size > 0 -%}
                       <accordion-disclosure>
-                        <details class="accordion__disclosure group">
+                        <details class="accordion__disclosure group" {% if open_second_level_menus %}open{% endif %}>
                           <summary class="header-sidebar__linklist-button {% if section.settings.sidebar_text_font == 'heading' %}h6{% endif %}">
                             {{- sub_link.title -}}
                             <span class="animated-plus group-expanded:rotate" aria-hidden="true"></span>

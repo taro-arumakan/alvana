@@ -13,6 +13,7 @@ Supported variables
 * variant: the specific variant to show the badge from
 * vertical: if set to true, the badges are outputted vertically
 * types: the types of badge to output. Can be "custom", "sold_out" or "discount" (or a combination separated by comma). If nothing is set, all badges are outputted.
+* context: can be "product" or "card"
 {%- endcomment -%}
 
 {%- liquid
@@ -41,11 +42,19 @@ Supported variables
 
       {%- when 'discount' -%}
         {%- if settings.show_discount -%}
-          {%- assign is_variant_on_sale = false -%}
+          {%- liquid
+            assign show_on_sale_badge = false
 
-          {%- if variant.compare_at_price > variant.price -%}
-            {%- assign is_variant_on_sale = true -%}
-          {%- endif -%}
+            if context == 'product'
+              if variant.compare_at_price > variant.price
+                assign show_on_sale_badge = true
+              endif
+            elsif context == 'card'
+              if product.compare_at_price > product.price
+                assign show_on_sale_badge = true
+              endif
+            endif
+          -%}
 
           {%- if product.compare_at_price > product.price -%}
             {%- if settings.discount_mode == 'percentage' -%}
@@ -54,13 +63,19 @@ Supported variables
               {%- capture savings -%}{{ variant.compare_at_price | minus: variant.price | money }}{%- endcapture -%}
             {%- endif -%}
 
-            {%- if variant != blank and is_variant_on_sale or variant == blank -%}
-              <on-sale-badge {% if settings.show_discount %}discount-mode="{{ settings.discount_mode | escape }}"{% endif %} class="badge badge--on-sale">
-                {%- if is_variant_on_sale == false or product.compare_at_price_varies -%}
-                  {{- 'product.general.on_sale_badge' | t -}}
-                {%- else -%}
-                  {{- 'product.general.discount_badge_html' | t: savings: savings -}}
-                {%- endif -%}
+            {%- if show_on_sale_badge -%}
+              <on-sale-badge class="badge badge--on-sale">
+                {%- liquid
+                  if context == 'product'
+                    echo 'product.general.discount_badge_html' | t: savings: savings
+                  elsif context == 'card'
+                    if product.compare_at_price_varies or variant.compare_at_price == blank
+                      echo 'product.general.on_sale_badge' | t
+                    else
+                      echo 'product.general.discount_badge_html' | t: savings: savings
+                    endif
+                  endif
+                -%}
               </on-sale-badge>
             {%- endif -%}
           {%- endif -%}

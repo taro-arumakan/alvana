@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin language editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "general": {
     "page": "Page {{ page }}",
@@ -33,7 +24,7 @@
       "shop": "Shop"
     },
     "label": {
-      "color": "Color,Colour,カラー",
+      "color": "Color,Colour",
       "white": "White",
       "size": "Size"
     },
@@ -108,7 +99,7 @@
       "view_in_space": "View in your space",
       "taxes_included": "Tax included.",
       "taxes_excluded": "Tax excluded.",
-      "shipping_policy_html": "<a href=\"{{ link }}\" class=\"link\">Shipping calculated</a> at checkout",
+      "shipping_policy_html": "<a href=\"{{ link }}\" class=\"link\">Shipping calculated<\/a> at checkout",
       "size_chart": "Size chart",
       "available_colors_count": {
         "one": "{{ count }} color available",
@@ -345,9 +336,9 @@
       "weight": "Weight",
       "subtotal": "Subtotal",
       "total": "Total",
-      "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\" class=\"link\">shipping</a> calculated at checkout",
+      "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\" class=\"link\">shipping<\/a> calculated at checkout",
       "taxes_included_but_shipping_at_checkout": "Tax included and shipping calculated at checkout",
-      "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\" class=\"link\">Shipping</a> calculated at checkout.",
+      "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\" class=\"link\">Shipping<\/a> calculated at checkout.",
       "taxes_and_shipping_at_checkout": "Taxes and shipping calculated at checkout",
       "add_order_note": "Add order note",
       "edit_order_note": "Edit order note",
@@ -453,7 +444,7 @@
   },
   "sections": {
     "before_after": {
-      "not_enough_blocks": "To show before/after comparison, add more blocks in the section.",
+      "not_enough_blocks": "To show before\/after comparison, add more blocks in the section.",
       "percentage_shown": "Percentage of after photo shown",
       "cursor_accessibility_text": "Use the left and right arrow keys to navigate between before and after photos."
     },

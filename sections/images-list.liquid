@@ -1,0 +1,174 @@
+{%- if section.blocks.size > 0 -%}
+  <style>
+    #shopify-section-{{ section.id }} {
+      {%- assign first_image = section.blocks | map: 'settings' | map: 'image' | compact | first -%}
+
+      --images-with-text-scroll-master-image-ratio: {{ first_image.aspect_ratio | default: 1 }};
+      --images-with-text-scroll-text-alignment: {{ section.settings.text_alignment }};
+
+      {%- if section.settings.overlay_color != 'rgba(0,0,0,0)' -%}
+        --images-with-text-scroll-overlay: {{ section.settings.overlay_color.rgb }} / {{ section.settings.overlay_opacity | divided_by: 100.0 }};
+      {%- endif -%}
+    }
+  </style>
+  <script src="{{ 'animate.js' | asset_url }}" defer></script>
+  {{- 'animate.css' | asset_url | stylesheet_tag: preload: true -}}
+
+  <images-list class="images-list color-scheme color-scheme--{{ section.settings.color_scheme.id }}">
+    {%- if section.settings.background_image or section.settings.mobile_background_image -%}
+      <picture class="contents {% if section.settings.background_image == blank %}md:hidden{% endif %}">
+        {%- if section.settings.mobile_background_image -%}
+          <source
+              media="(max-width: 699px)"
+              srcset="{{ section.settings.mobile_background_image | image_url: width: '400x' }} 400w, {{ section.settings.mobile_background_image | image_url: width: '600x' }} 600w, {{ section.settings.mobile_background_image | image_url: width: '800x' }} 800w, {{ section.settings.mobile_background_image | image_url: width: '1000x' }} 1000w"
+              width="{{ section.settings.mobile_background_image.width }}"
+              height="{{ section.settings.mobile_background_image.height }}"
+          >
+        {%- endif -%}
+
+        {%- assign background_image = section.settings.background_image | default: section.settings.mobile_background_image -%}
+
+        {{- background_image | image_url: width: background_image.width | image_tag: widths: '200,300,400,500,600,800,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000', class: 'images-with-text-scroll__image-background' -}}
+      </picture>
+    {%- endif -%}
+
+    <div class="images-list__container container container--md">
+      {%- assign images = section.blocks | map: 'settings' | map: 'image' | compact -%}
+      {%- assign trans_classes = "reveal_tran_bt,reveal_tran_rl,reveal_tran_lr,reveal_tran_tb" | split: "," %}
+      {%- for block in section.blocks -%}
+        {%-  assign trans_class_index = forloop.index | minus: 1 | modulo: 4 -%}
+        <div class="images-list-item {{ trans_classes[trans_class_index] }}">
+          {%- liquid
+            if images.size == 0 and forloop.first
+              echo 'image' | placeholder_svg_tag: 'images-with-text-scroll__image placeholder'
+            elsif block.settings.image
+              assign loading = nil
+
+              unless forloop.first
+                assign loading = 'lazy'
+              endunless
+
+              echo block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: loading, sizes: '(max-width: 699px) 210px, (max-width: 999px) 440px, 575px', widths: '210,420,440,575,630,880,1150,1320,1725', style: 'object-position: inherit', class: 'images-list__image'
+            endif
+          -%}
+        </div>
+      {%- endfor -%}
+    </div>
+  </images-list>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "t:sections.images_list.name",
+  "class": "shopify-section--images-with-text-scroll",
+  "tag": "section",
+  "max_blocks": 10,
+  "disabled_on": {
+    "groups": ["header", "custom.overlay"]
+  },
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:global.colors.scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "paragraph",
+      "content": "t:sections.images_list.instructions"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "t:global.image.background_image",
+      "info": "t:sections.images_list.background_image_info"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_background_image",
+      "label": "t:global.image.mobile_background_image",
+      "info": "t:sections.images_list.mobile_background_image_info"
+    },
+    {
+      "type": "header",
+      "content": "t:global.text.content"
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "t:sections.images_list.image_position",
+      "options": [
+        {
+          "value": "start",
+          "label": "t:global.position.left"
+        },
+        {
+          "value": "center",
+          "label": "t:global.position.center"
+        },
+        {
+          "value": "end",
+          "label": "t:global.position.right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "header",
+      "content": "t:global.colors.category"
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "t:global.colors.overlay_color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "t:global.colors.overlay_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "t:sections.images_list.blocks.image.name",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:global.image.image",
+          "info": "t:sections.images_list.blocks.image.image_info"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.images_list.presets.images_list.name",
+      "blocks": [
+        {
+          "type": "image",
+          "settings": {
+          }
+        },
+        {
+          "type": "image",
+          "settings": {
+          }
+        },
+        {
+          "type": "image",
+          "settings": {
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

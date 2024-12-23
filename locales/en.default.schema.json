@@ -868,6 +868,25 @@
         }
       }
     },
+    "images_list": {
+      "name": "Images list",
+      "instructions": "Configure content by adding blocks. The section adapts automatically to fill exactly the screen height.",
+      "background_image_info": "3000 x 1800px .jpg recommended. Image edges may be cut to adjust to the screen size.",
+      "mobile_background_image_info": "1600 x 2000px .jpg recommended. Image edges may be cut to adjust to the screen size.",
+      "image_position": "Image position",
+      "blocks": {
+        "image": {
+          "name": "Image",
+          "image_info": "1200 x 1200px .jpg recommended",
+          "content_info": "Image without any texts."
+        }
+      },
+      "presets": {
+        "images_list": {
+          "name": "Images list"
+        }
+      }
+    },
     "logo_list": {
       "name": "Logo list",
       "items_per_row_desktop": "Items per row (desktop)",

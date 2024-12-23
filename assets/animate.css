@@ -1,0 +1,66 @@
+.reveal_fadein_letter {
+  opacity: 0;
+}
+
+.reveal_fadein_letter.hidden {
+  opacity: 0;
+}
+
+.reveal_fadein_letter.active {
+  opacity: 1;
+}
+
+.reveal_fadein_letter>span {
+  opacity: 0;
+  transition: opacity 400ms cubic-bezier(1, 0, 0.1, 1);
+}
+
+.reveal_fadein_letter.active>span {
+  opacity: 1;
+}
+
+.reveal_tran_tb {
+  opacity: 0;
+  transform: translate(0, -4vw);
+}
+
+.reveal_tran_bt {
+  opacity: 0;
+  transform: translate(0, 4vw);
+}
+
+.reveal_tran_rl {
+  opacity: 0;
+  transform: translate(4vw, 0);
+}
+
+.reveal_tran_lr {
+  opacity: 0;
+  transform: translate(-4vw, 0);
+}
+
+.reveal_tran_tb.active,
+.reveal_tran_bt.active,
+.reveal_tran_rl.active,
+.reveal_tran_lr.active {
+  transition: transform 750ms ease-in-out 100ms, opacity 750ms ease-in-out 100ms;
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.reveal_tran_tb.hidden,
+.reveal_tran_bt.hidden,
+.reveal_tran_rl.hidden,
+.reveal_tran_lr.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: transform 1s, visibility 0s 1s, opacity 1s ease-out;
+}
+
+.reveal_tran_tb.hidden a,
+.reveal_tran_bt.hidden a,
+.reveal_tran_rl.hidden a,
+.reveal_tran_lr.hidden a {
+  pointer-events: none;
+  cursor: default;
+}

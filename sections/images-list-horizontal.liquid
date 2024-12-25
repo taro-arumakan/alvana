@@ -14,7 +14,7 @@
   <script src="{{ 'animate.js' | asset_url }}" defer></script>
   {{- 'animate.css' | asset_url | stylesheet_tag: preload: true -}}
 
-  <images-list class="images-list color-scheme color-scheme--{{ section.settings.color_scheme.id }}">
+  <images-list-horizontal class="images-list color-scheme color-scheme--{{ section.settings.color_scheme.id }}">
     {%- if section.settings.background_image or section.settings.mobile_background_image -%}
       <picture class="contents {% if section.settings.background_image == blank %}md:hidden{% endif %}">
         {%- if section.settings.mobile_background_image -%}
@@ -32,12 +32,21 @@
       </picture>
     {%- endif -%}
 
-    <div class="images-list__container container container--md">
+    <div class="horizontal-scroll-area images-list__container container container--md">
       {%- assign images = section.blocks | map: 'settings' | map: 'image' | compact -%}
-      {%- assign trans_classes = "revealy_tran_bt,revealy_tran_rl,revealy_tran_lr,revealy_tran_tb" | split: "," %}
       {%- for block in section.blocks -%}
-        {%-  assign trans_class_index = forloop.index | minus: 1 | modulo: 4 -%}
-        <div class="images-list-item {{ trans_classes[trans_class_index] }}">
+        {% liquid
+          if forloop.index == 1
+            assign trans_class = 'revealy_tran_bt'
+          elsif forloop.index == 2
+            assign trans_class = 'revealy_tran_tb'
+          else
+            assign trans_classes = "revealx_tran_bt,revealx_tran_rl,revealx_tran_lr,revealx_tran_tb" | split: ","
+            assign trans_class_index = forloop.index | minus: 1 | modulo: 4
+            assign trans_class = trans_classes[ trans_class_index ]
+          endif
+        %}
+        <div class="images-list-item-horizontal {{ trans_class }}">
           {%- liquid
             if images.size == 0 and forloop.first
               echo 'image' | placeholder_svg_tag: 'images-with-text-scroll__image placeholder'
@@ -54,13 +63,13 @@
         </div>
       {%- endfor -%}
     </div>
-  </images-list>
+  </images-list-horizontal>
 {%- endif -%}
 
 {% schema %}
 {
-  "name": "t:sections.images_list.name",
-  "class": "shopify-section--images-with-text-scroll",
+  "name": "t:sections.images_list_horizontal.name",
+  "class": "shopify-section--images-list-horizontal",
   "tag": "section",
   "max_blocks": 10,
   "disabled_on": {

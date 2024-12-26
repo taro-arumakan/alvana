@@ -77,14 +77,18 @@
         // add touchstart and touchend event
         for(let productCard of productCards) {
            productCard.addEventListener('touchstart', (e) => {
-            productCard.querySelector('.product-card__image--secondary').style.opacity = 1;
-            productCard.querySelector('.product-card__image--primary').style.opacity = 0;
-            productCard.querySelector('.product-card__image--secondary').style.visibility = 'visible';
+            const secondaryImage = productCard.querySelector('.product-card__image--secondary');
+            const primaryImage = productCard.querySelector('.product-card__image--primary');
+            secondaryImage.style.opacity = 1;
+            primaryImage.style.opacity = 0;
+            secondaryImage.style.visibility = 'visible';
           });
           productCard.addEventListener('touchend', () => {
-            productCard.querySelector('.product-card__image--secondary').style.opacity = 0;
-            productCard.querySelector('.product-card__image--primary').style.opacity = 1;
-            productCard.querySelector('.product-card__image--secondary').style.visibility = 'hidden';
+            const secondaryImage = productCard.querySelector('.product-card__image--secondary');
+            const primaryImage = productCard.querySelector('.product-card__image--primary');
+            secondaryImage.style.opacity = 0;
+            primaryImage.style.opacity = 1;
+            secondaryImage.style.visibility = 'hidden';
           });
         }
       }

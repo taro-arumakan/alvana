@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  const scrollElement = document.querySelector(".horizontal-scroll-area");
+  const scrollElements = document.querySelectorAll(".horizontal-scroll-area");
 
   let isTouching = false;
   let touchStartX = 0;
@@ -81,6 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function handleSwipe(e) {
     if (!('ontouchstart' in window)) return;
+    const scrollElement = e.currentTarget;
     if (!isElementFullyInView(scrollElement)) return; // Wait until fully in view
 
     switch (e.type) {
@@ -154,6 +155,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function handleScroll(e) {
+    const scrollElement = e.currentTarget;
     if (!isElementFullyInView(scrollElement)) return; // Wait until fully in view
     const maxScrollLeft = scrollElement.scrollWidth - scrollElement.clientWidth;
     if (e.type === "wheel") {
@@ -177,14 +179,16 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Register touch events to the unified handler
-  scrollElement.addEventListener("touchstart", handleSwipe);
-  scrollElement.addEventListener("touchmove", handleSwipe);
-  scrollElement.addEventListener("touchend", handleSwipe);
+  for (const el of scrollElements) {
+    el.addEventListener("touchstart", handleSwipe);
+    el.addEventListener("touchmove", handleSwipe);
+    el.addEventListener("touchend", handleSwipe);
 
-  // Scroll event listener
-  scrollElement.addEventListener("wheel", handleScroll);
-  scrollElement.addEventListener("scroll", handleScroll);
-  scrollElement.addEventListener("scroll", reveal_scroll);
+    // Scroll event listener
+    el.addEventListener("wheel", handleScroll);
+    el.addEventListener("scroll", handleScroll);
+    el.addEventListener("scroll", reveal_scroll);
+  }
 
   window.addEventListener("scroll", reveal_scroll);
   reveal_init();

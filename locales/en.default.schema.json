@@ -901,8 +901,8 @@
         }
       },
       "presets": {
-        "images_list": {
-          "name": "Images list"
+        "images_list_horizontal": {
+          "name": "Images List Horizontal"
         }
       }
     },

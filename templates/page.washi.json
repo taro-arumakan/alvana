@@ -24,14 +24,14 @@
         "heading_PjwMd3": {
           "type": "heading",
           "settings": {
-            "text": "NATURAL TWILL",
+            "text": "和紙",
             "heading_tag": "h4"
           }
         },
         "richtext_tRmKkB": {
           "type": "richtext",
           "settings": {
-            "content": "<p>「無垢」糸をよりあまく編むことで、風合いが柔らかくふんわりとした仕上がりに。</p><p>乾燥している土地だからこそ作ることができる希少な素材。<br/>仕上げに天然の縮をかけることで、生地の風合いが完成します。<br/>ナチュラルな素材・タオルの様な肌触りに一度触れてみてくだい。</p>"
+            "content": "<p>古来から日本で発展してきた特有の素材 「和紙」。</p><p>凹凸感の異なる2種類の糸を独自に撚り合わせたことで生まれる、軽さとシャリ感をもった唯一無二の風合い。さらに、合成繊維と組み合わせることで、通気性、軽量性、防シワ性、そして吸水・速乾性といった機能性をプラス。見た目の上質さだけでなく、快適さも兼ね備えた全く新しい素材へと進化しました。</p><p>空気を纏っているような軽やかさと、肌に触れたときの涼しげな感触。伝統と革新が融合したこの特別な和紙素材をぜひ日常に。</p>"
           }
         }
       },
@@ -39,11 +39,13 @@
         "heading_PjwMd3",
         "richtext_tRmKkB"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".prose {text-align: left;}"
+      ],
       "settings": {
         "color_scheme": "",
         "image_size": "fill",
-        "image": "shopify://shop_images/twillfabric02.jpg",
+        "image": "shopify://shop_images/washi_material.jpg",
         "allow_transparent_header": false,
         "reveal_on_scroll": true,
         "remove_vertical_spacing": true,
@@ -60,55 +62,61 @@
         "image_eFemVx": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/natural_twill_8.jpg"
+            "image": "shopify://shop_images/washi_CREWNECK_1.jpg"
           }
         },
         "image_rG63Vc": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/natural_twill_5.jpg"
+            "image": "shopify://shop_images/washi_CREWNECK_2.jpg"
           }
         },
         "image_gEQi63": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/natural_twill_1.jpg"
+            "image": "shopify://shop_images/washi_CREWNECK_3.jpg"
           }
         },
         "image_iBn6mB": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/natural_twill_2.jpg"
+            "image": "shopify://shop_images/washi_CREWNECK_4.jpg"
           }
         },
         "image_ggAK8D": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/natural_twill_4.jpg"
-          }
-        },
-        "image_qgaVFq": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/natural_twill_2.jpg"
+            "image": "shopify://shop_images/washi_SKIPPER_1.jpg"
           }
         },
         "image_wVFPPN": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/natural_twill_6.jpg"
+            "image": "shopify://shop_images/washi_SKIPPER_2.jpg"
           }
         },
         "image_gxWfLA": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/natural_twill_3.jpg"
+            "image": "shopify://shop_images/washi_SKIPPER_3.jpg"
           }
         },
         "image_qTf4X4": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/natural_twill_7.jpg"
+            "image": "shopify://shop_images/washi_SKIPPER_4.jpg"
+          }
+        },
+        "image_r4eENF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/washi_SKIPPER_5.jpg"
+          }
+        },
+        "image_RRkebm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/washi_SKIPPER_6.jpg"
           }
         }
       },
@@ -118,10 +126,11 @@
         "image_gEQi63",
         "image_iBn6mB",
         "image_ggAK8D",
-        "image_qgaVFq",
         "image_wVFPPN",
         "image_gxWfLA",
-        "image_qTf4X4"
+        "image_qTf4X4",
+        "image_r4eENF",
+        "image_RRkebm"
       ],
       "settings": {
         "color_scheme": "scheme-4",
@@ -136,7 +145,7 @@
         "collection_ryiJBX": {
           "type": "collection",
           "settings": {
-            "collection": "natural-twill",
+            "collection": "washi",
             "products_count": 8,
             "title": "",
             "link_url": "",

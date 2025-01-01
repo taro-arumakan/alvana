@@ -1,0 +1,283 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "xs"
+      }
+    },
+    "image_with_text_overlay_iJzzCF": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_PjwMd3": {
+          "type": "heading",
+          "settings": {
+            "text": "BHARAT DENIM",
+            "heading_tag": "h4"
+          }
+        },
+        "richtext_tRmKkB": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>インド綿の魅力を最大限に引き出した特別な素材、Bharat (バラット)。インド綿特有の強度と弾力性、しっかりとしたコシが特徴で、太めの繊維から生まれる豊かな表情と独特の風合いが魅力です。</p><p>耐熱性や吸水性にも優れており、実用性と快適性を兼ね備えた生地。そこからつくられるオリジナルデニムアイテムは、素材の凹凸感とシャリ感が絶妙に調和した、愛着が湧く仕上がり。</p><p>幅広いアイテムに馴染む定番の力強さと自然な風合いを、ぜひ手に取ってお確かめください。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_PjwMd3",
+        "richtext_tRmKkB"
+      ],
+      "custom_css": [
+        ".prose {text-align: left;}"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "image_size": "fill",
+        "image": "shopify://shop_images/bharat_material.jpg",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": true,
+        "remove_vertical_spacing": true,
+        "content_width": "md",
+        "mobile_text_position": "place-self-end-center text-center",
+        "desktop_text_position": "sm:place-self-end-center sm:text-center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "images_list_MHe8ty": {
+      "type": "images-list-horizontal",
+      "blocks": {
+        "image_eFemVx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/bharat_denim_coverall_1.jpg"
+          }
+        },
+        "image_rG63Vc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/bharat_denim_coverall_2.jpg"
+          }
+        },
+        "image_gEQi63": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/bharat_denim_coverall_3.jpg"
+          }
+        },
+        "image_iBn6mB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/bharat_denim_coverall_4.jpg"
+          }
+        },
+        "image_ggAK8D": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/bharat_denim_coverall_5.jpg"
+          }
+        },
+        "image_qgaVFq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/bharat_denim_coverall_6.jpg"
+          }
+        },
+        "image_wVFPPN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/bharat_denim_coverall_7.jpg"
+          }
+        },
+        "image_gxWfLA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/bharat_denim_coverall_8.jpg"
+          }
+        },
+        "image_qTf4X4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/bharat_denim_coverall_9.jpg"
+          }
+        },
+        "image_r4eENF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/bharat_denim_coverall_10.jpg"
+          }
+        },
+        "image_RRkebm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/bharat_denim_coverall_11.jpg"
+          }
+        },
+        "image_4xTbek": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/bharat_denim_coverall_12.jpg"
+          }
+        },
+        "image_3AkkUb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/bharat_denim_coverall_13.jpg"
+          }
+        },
+        "image_yqWiJW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/bharat_denim_coverall_14.jpg"
+          }
+        },
+        "image_PYLmKX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/bharat_denim_coverall_15.jpg"
+          }
+        },
+        "image_UHRQyt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/bharat_denim_coverall_16.jpg"
+          }
+        },
+        "image_yXxdCz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/bharat_denim_coverall_17.jpg"
+          }
+        },
+        "image_NVz3Jq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/bharat_denim_coverall_18.jpg"
+          }
+        },
+        "image_nYwezj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/bharat_denim_coverall_19.jpg"
+          }
+        },
+        "image_B8GWfb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/bharat_denim_coverall_20.jpg"
+          }
+        },
+        "image_NX3kbm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/bharat_denim_coverall_21.jpg"
+          }
+        },
+        "image_bNChdG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/bharat_denim_coverall_22.jpg"
+          }
+        },
+        "image_C8wa6h": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/bharat_denim_coverall_23.jpg"
+          }
+        },
+        "image_Mf9Ywi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/bharat_denim_coverall_24.jpg"
+          }
+        },
+        "image_PAVVEe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/bharat_denim_coverall_25.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_eFemVx",
+        "image_rG63Vc",
+        "image_gEQi63",
+        "image_iBn6mB",
+        "image_ggAK8D",
+        "image_qgaVFq",
+        "image_wVFPPN",
+        "image_gxWfLA",
+        "image_qTf4X4",
+        "image_r4eENF",
+        "image_RRkebm",
+        "image_4xTbek",
+        "image_3AkkUb",
+        "image_yqWiJW",
+        "image_PYLmKX",
+        "image_UHRQyt",
+        "image_yXxdCz",
+        "image_NVz3Jq",
+        "image_nYwezj",
+        "image_B8GWfb",
+        "image_NX3kbm",
+        "image_bNChdG",
+        "image_C8wa6h",
+        "image_Mf9Ywi",
+        "image_PAVVEe"
+      ],
+      "settings": {
+        "color_scheme": "scheme-4",
+        "image_position": "center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "featured_collections_QNady7": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_ryiJBX": {
+          "type": "collection",
+          "settings": {
+            "collection": "bharat-denim",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        }
+      },
+      "block_order": [
+        "collection_ryiJBX"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_overlay_iJzzCF",
+    "images_list_MHe8ty",
+    "featured_collections_QNady7"
+  ]
+}

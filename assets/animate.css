@@ -143,19 +143,19 @@
 
 /* images list horizontal */
 .images-list-item-horizontal:nth-of-type(10n+1) {
-  margin-bottom: 6rem;
+  margin-top: 6rem;
 }
 .images-list-item-horizontal:nth-of-type(10n+2) {
-  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 .images-list-item-horizontal:nth-of-type(10n+3) {
-  margin-bottom: 3rem;
-}
-.images-list-item-horizontal:nth-of-type(10n+4) {
   margin-top: 3rem;
 }
+.images-list-item-horizontal:nth-of-type(10n+4) {
+  margin-bottom: 3rem;
+}
 .images-list-item-horizontal:nth-of-type(10n+5) {
-  margin-top: 6rem;
+  margin-top: 5rem;
 }
 .images-list-item-horizontal:nth-of-type(10n+6) {
   margin-bottom: 5rem;
@@ -172,16 +172,9 @@
 }
 
 .images-list-item-horizontal:nth-of-type(10n+10) {
-  margin-top: 6rem;
-}
-
-.images-list-item-horizontal:nth-of-type(10n+11) {
   margin-bottom: 6rem;
 }
 
-.images-list-item-horizontal:nth-of-type(10n+12) {
-  margin-top: 6rem;
-}
 
 /* horizontal scroll area */
 .horizontal-scroll-area {

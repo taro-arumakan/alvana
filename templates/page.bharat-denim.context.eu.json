@@ -1,0 +1,27 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "parent": "page.bharat-denim.json",
+  "context": {
+    "market": "eu"
+  },
+  "sections": {
+    "image_with_text_overlay_iJzzCF": {
+      "settings": {},
+      "blocks": {
+        "richtext_tRmKkB": {
+          "settings": {
+            "content": "<p>Bharat, a special material that maximizes the natural appeal of Indian cotton. Renowned for its strength, resilience, and firm texture, it features rich character and a unique feel, thanks to the thicker fibers used. Exceptional in both heat resistance and moisture absorption, this fabric seamlessly combines practicality with comfort.</p><p>Our original denim items crafted from Bharat are a testament to its qualities, offering a perfect balance of textured depth and crispness. The result is a material that feels timeless yet personal, making it a staple for a wide range of styles. Experience the strength and natural charm of Bharat firsthand—it’s a fabric that truly stands out.</p>"
+          }
+        }
+      }
+    }
+  }
+}

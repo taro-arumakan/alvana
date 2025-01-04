@@ -100,7 +100,27 @@
           "settings": {
             "image": "shopify://shop_images/bharat_denim_coverall_7.jpg"
           }
-        },
+        }
+      },
+      "block_order": [
+        "image_eFemVx",
+        "image_rG63Vc",
+        "image_gEQi63",
+        "image_iBn6mB",
+        "image_ggAK8D",
+        "image_qgaVFq",
+        "image_wVFPPN"
+      ],
+      "settings": {
+        "color_scheme": "scheme-4",
+        "image_position": "center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "images_list_ND8f77": {
+      "type": "images-list-horizontal",
+      "blocks": {
         "image_gxWfLA": {
           "type": "image",
           "settings": {
@@ -166,58 +186,9 @@
           "settings": {
             "image": "shopify://shop_images/bharat_denim_coverall_18.jpg"
           }
-        },
-        "image_nYwezj": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/bharat_denim_coverall_19.jpg"
-          }
-        },
-        "image_B8GWfb": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/bharat_denim_coverall_20.jpg"
-          }
-        },
-        "image_NX3kbm": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/bharat_denim_coverall_21.jpg"
-          }
-        },
-        "image_bNChdG": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/bharat_denim_coverall_22.jpg"
-          }
-        },
-        "image_C8wa6h": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/bharat_denim_coverall_23.jpg"
-          }
-        },
-        "image_Mf9Ywi": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/bharat_denim_coverall_24.jpg"
-          }
-        },
-        "image_PAVVEe": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/bharat_denim_coverall_25.jpg"
-          }
         }
       },
       "block_order": [
-        "image_eFemVx",
-        "image_rG63Vc",
-        "image_gEQi63",
-        "image_iBn6mB",
-        "image_ggAK8D",
-        "image_qgaVFq",
-        "image_wVFPPN",
         "image_gxWfLA",
         "image_qTf4X4",
         "image_r4eENF",
@@ -228,17 +199,77 @@
         "image_PYLmKX",
         "image_UHRQyt",
         "image_yXxdCz",
-        "image_NVz3Jq",
-        "image_nYwezj",
-        "image_B8GWfb",
-        "image_NX3kbm",
-        "image_bNChdG",
-        "image_C8wa6h",
-        "image_Mf9Ywi",
-        "image_PAVVEe"
+        "image_NVz3Jq"
       ],
       "settings": {
-        "color_scheme": "scheme-4",
+        "color_scheme": "",
+        "image_position": "center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "images_list_horizontal_Tnr6cY": {
+      "type": "images-list-horizontal",
+      "blocks": {
+
+"image_nYwezj": {
+  "type": "image",
+  "settings": {
+    "image": "shopify://shop_images/bharat_denim_coverall_19.jpg"
+  }
+},
+"image_B8GWfb": {
+  "type": "image",
+  "settings": {
+    "image": "shopify://shop_images/bharat_denim_coverall_20.jpg"
+  }
+},
+"image_NX3kbm": {
+  "type": "image",
+  "settings": {
+    "image": "shopify://shop_images/bharat_denim_coverall_21.jpg"
+  }
+},
+"image_bNChdG": {
+  "type": "image",
+  "settings": {
+    "image": "shopify://shop_images/bharat_denim_coverall_22.jpg"
+  }
+},
+"image_C8wa6h": {
+  "type": "image",
+  "settings": {
+    "image": "shopify://shop_images/bharat_denim_coverall_23.jpg"
+  }
+},
+"image_Mf9Ywi": {
+  "type": "image",
+  "settings": {
+    "image": "shopify://shop_images/bharat_denim_coverall_24.jpg"
+  }
+},
+"image_PAVVEe": {
+  "type": "image",
+  "settings": {
+    "image": "shopify://shop_images/bharat_denim_coverall_25.jpg"
+  }
+}
+
+      },
+      "block_order": [
+
+
+"image_nYwezj",
+"image_B8GWfb",
+"image_NX3kbm",
+"image_bNChdG",
+"image_C8wa6h",
+"image_Mf9Ywi",
+"image_PAVVEe"
+
+      ],
+      "settings": {
+        "color_scheme": "",
         "image_position": "center",
         "overlay_color": "#000000",
         "overlay_opacity": 0
@@ -278,6 +309,8 @@
     "main",
     "image_with_text_overlay_iJzzCF",
     "images_list_MHe8ty",
+    "images_list_ND8f77",
+    "images_list_horizontal_Tnr6cY",
     "featured_collections_QNady7"
   ]
 }

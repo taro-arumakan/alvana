@@ -127,6 +127,7 @@
         "image_YfY9VY",
         "image_aPVcee"
       ],
+      "disabled": true,
       "settings": {
         "allow_transparent_header": true,
         "show_next_section_button": false,
@@ -137,6 +138,45 @@
         "cycle_speed": 5,
         "background": "#000000",
         "controls_color": "#ffffff"
+      }
+    },
+    "image_with_text_TWPYwK": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_rihwRH": {
+          "type": "subheading",
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "heading_V8zRtf": {
+          "type": "heading",
+          "settings": {
+            "text": "Image with text",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_NGLpja": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_rihwRH",
+        "heading_V8zRtf",
+        "richtext_NGLpja"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "image": "shopify://shop_images/nepal_4.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": false
       }
     },
     "featured_collections_7knwzx": {
@@ -201,11 +241,11 @@
       "disabled": true,
       "settings": {
         "color_scheme": "",
-        "image_size": "auto",
-        "image": "shopify://shop_images/material_1.jpg",
-        "allow_transparent_header": false,
+        "image_size": "fill",
+        "image": "shopify://shop_images/nepal_4.jpg",
+        "allow_transparent_header": true,
         "reveal_on_scroll": true,
-        "remove_vertical_spacing": false,
+        "remove_vertical_spacing": true,
         "content_width": "md",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
@@ -269,7 +309,7 @@
         "color_scheme": "",
         "image_size": "fill",
         "image": "shopify://shop_images/material_2.jpg",
-        "allow_transparent_header": false,
+        "allow_transparent_header": true,
         "reveal_on_scroll": true,
         "remove_vertical_spacing": true,
         "content_width": "sm",
@@ -803,6 +843,7 @@
   },
   "order": [
     "slideshow",
+    "image_with_text_TWPYwK",
     "featured_collections_7knwzx",
     "image_with_text_overlay_E9Y6HK",
     "featured-collections",

@@ -1,0 +1,27 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "parent": "page.natural-twill.json",
+  "context": {
+    "market": "eu"
+  },
+  "sections": {
+    "image_with_text_overlay_iJzzCF": {
+      "settings": {},
+      "blocks": {
+        "richtext_tRmKkB": {
+          "settings": {
+            "content": "<p>The soft and fluffy texture is created by carefully twisting and weaving each strand of pure \"muku\" yarn. This luxurious fabric, made possible only in arid regions, embodies a rare and exceptional finish.</p><p>To enhance its quality, a natural fulling process is applied, adding smoothness and a sense of depth. The gentle touch, reminiscent of a soft towel, instantly reveals its uniqueness the moment you hold it.</p><p>Simple yet refined, this fabric offers comfort perfect for both everyday wear and special occasions. Experience this exceptional piece that you'll find yourself wanting to wear again and again.</p>"
+          }
+        }
+      }
+    }
+  }
+}

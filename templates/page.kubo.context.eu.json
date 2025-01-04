@@ -1,0 +1,27 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "parent": "page.kubo.json",
+  "context": {
+    "market": "eu"
+  },
+  "sections": {
+    "image_with_text_overlay_iJzzCF": {
+      "settings": {},
+      "blocks": {
+        "richtext_tRmKkB": {
+          "settings": {
+            "content": "<p>Developed over the course of more than a year, \"Kūbō Tenjiku\" is a versatile new staple material that elevates and refines the classic image of Tangis fabric. It combines the crisp texture and moderate weight (ounce) characteristic of kūbō yarn in perfect harmony, delivering a comfortable feel that suits Japan’s four seasons.</p><p>The 16/- tenjiku fabric strikes an ideal balance between lightness and durability, making it a go-to material for everyday wear. Its casual yet refined look ensures it shines in any setting. A must-have for your wardrobe, this new essential lets you experience its exceptional quality every time you wear it.</p>"
+          }
+        }
+      }
+    }
+  }
+}

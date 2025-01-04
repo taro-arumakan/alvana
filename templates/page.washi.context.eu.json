@@ -1,0 +1,32 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "parent": "page.washi.json",
+  "context": {
+    "market": "eu"
+  },
+  "sections": {
+    "image_with_text_overlay_iJzzCF": {
+      "settings": {},
+      "blocks": {
+        "heading_PjwMd3": {
+          "settings": {
+            "text": "和紙 -  Washi"
+          }
+        },
+        "richtext_tRmKkB": {
+          "settings": {
+            "content": "<p>Washi, a unique material that has evolved in Japan since ancient times. By twisting together two types of yarn with varying textures, it achieves an unparalleled combination of lightness and crispness.</p><p>When blended with synthetic fibers, this material is further enhanced with breathability, light weight, wrinkle resistance, and moisture-wicking, quick-drying functionality. It’s a groundbreaking fabric that combines not only a refined appearance but also exceptional comfort.</p><p>With its airy lightness, as if wrapped in air, and its cool touch against the skin, this special Washi material fuses tradition with innovation. Bring this extraordinary fabric into your daily life.</p>"
+          }
+        }
+      }
+    }
+  }
+}

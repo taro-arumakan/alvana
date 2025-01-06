@@ -17,12 +17,12 @@ document.addEventListener("DOMContentLoaded", function () {
       const rect = reveal.getBoundingClientRect();
 
       // Check for vertical reveal classes (e.g., "revealy_*")
-      if (Array.from(reveal.classList).some(cls => cls.startsWith("revealy")) && rect.top < windowHeight - offset) {
+      if (Array.from(reveal.classList).some(cls => cls.startsWith("revealy")) && (rect.top < windowHeight - offset)) {
         reveal.classList.add("active");
       }
 
       // Check for horizontal reveal classes (e.g., "revealx_*")
-      if (Array.from(reveal.classList).some(cls => cls.startsWith("revealx")) && rect.left < windowWidth - offset) {
+      if (Array.from(reveal.classList).some(cls => cls.startsWith("revealx")) && (rect.left < windowWidth - offset)) {
         reveal.classList.add("active");
       }
     });

@@ -140,109 +140,40 @@
         "controls_color": "#ffffff"
       }
     },
-    "image_with_text_TWPYwK": {
-      "type": "image-with-text",
+    "image_with_text_overlay_9wQt3Q": {
+      "type": "image-with-text-overlay",
       "blocks": {
-        "subheading_rihwRH": {
+        "heading_pJVbC3": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Materials",
+            "heading_tag": "h4"
+          }
+        },
+        "subheading_HgcQjr": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "text": "Subheading"
           }
         },
-        "heading_V8zRtf": {
-          "type": "heading",
-          "settings": {
-            "text": "Image with text",
-            "heading_tag": "h1"
-          }
-        },
-        "richtext_NGLpja": {
+        "richtext_8FE96F": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            "content": "<p>Our Materials</p>"
           }
         }
       },
       "block_order": [
-        "subheading_rihwRH",
-        "heading_V8zRtf",
-        "richtext_NGLpja"
+        "heading_pJVbC3",
+        "subheading_HgcQjr",
+        "richtext_8FE96F"
       ],
-      "disabled": true,
       "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": true,
-        "image": "shopify://shop_images/nepal_4.jpg",
-        "reveal_on_scroll": true,
-        "image_position": "start",
-        "content_width": "sm",
-        "remove_vertical_spacing": false
-      }
-    },
-    "featured_collections_7knwzx": {
-      "type": "featured-collections",
-      "blocks": {
-        "collection_pJwX4N": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "products_count": 8,
-            "title": "",
-            "link_url": "",
-            "link_text": "View all"
-          }
-        }
-      },
-      "block_order": [
-        "collection_pJwX4N"
-      ],
-      "disabled": true,
-      "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": true,
-        "hide_product_information": false,
-        "stack_products": false,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 4,
-        "horizontal_spacing_factor": 1,
-        "vertical_spacing_factor": 1,
-        "subheading": "ここにおすすめ商品のcollection"
-      }
-    },
-    "image_with_text_overlay_E9Y6HK": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "heading_e9wWYp": {
-          "type": "heading",
-          "settings": {
-            "text": "LINEN NARROW COTTON",
-            "heading_tag": "h4"
-          }
-        },
-        "richtext_WBTNR4": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>インドリネンを使用した洗いしの雰囲気に定評のあるライトオンスのリネン素材。</p><p>洗う度に風合いが変化していく生地です。</p>"
-          }
-        },
-        "link_3JndA6": {
-          "type": "link",
-          "settings": {
-            "text": "VIEW PRODUCTS",
-            "url": ""
-          }
-        }
-      },
-      "block_order": [
-        "heading_e9wWYp",
-        "richtext_WBTNR4",
-        "link_3JndA6"
-      ],
-      "disabled": true,
-      "settings": {
-        "color_scheme": "",
-        "image_size": "fill",
-        "image": "shopify://shop_images/nepal_4.jpg",
+        "color_scheme": "scheme-4",
+        "image_size": "auto",
+        "image": "shopify://shop_images/nepal_4_4c5f6a11-b492-47a9-a28f-011e5c0536ff.jpg",
         "allow_transparent_header": true,
         "reveal_on_scroll": true,
         "remove_vertical_spacing": true,
@@ -250,37 +181,7 @@
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "overlay_color": "#000000",
-        "overlay_opacity": 20
-      }
-    },
-    "featured-collections": {
-      "type": "featured-collections",
-      "blocks": {
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "products_count": 8,
-            "title": "",
-            "link_url": "",
-            "link_text": "View all"
-          }
-        }
-      },
-      "block_order": [
-        "collection-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": true,
-        "hide_product_information": false,
-        "stack_products": false,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 4,
-        "horizontal_spacing_factor": 1,
-        "vertical_spacing_factor": 1,
-        "subheading": "ここに素材のcollection"
+        "overlay_opacity": 30
       }
     },
     "image_with_text_overlay_D9tKMQ": {
@@ -296,7 +197,7 @@
         "link_NdwgfH": {
           "type": "link",
           "settings": {
-            "text": "View Material",
+            "text": "Explore Material",
             "url": "shopify://pages/natural-twill"
           }
         }
@@ -305,13 +206,16 @@
         "heading_TjHybE",
         "link_NdwgfH"
       ],
+      "custom_css": [
+        ".section-spacing {padding-block-start: 0.1rem; padding-block-end: 0.1rem;}"
+      ],
       "settings": {
         "color_scheme": "",
         "image_size": "fill",
         "image": "shopify://shop_images/material_2.jpg",
         "allow_transparent_header": true,
         "reveal_on_scroll": true,
-        "remove_vertical_spacing": true,
+        "remove_vertical_spacing": false,
         "content_width": "sm",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
@@ -332,7 +236,7 @@
         "link_VBMCpk": {
           "type": "link",
           "settings": {
-            "text": "View Material",
+            "text": "Explore Material",
             "url": "shopify://pages/bharat-denim"
           }
         }
@@ -368,7 +272,7 @@
         "link_jTKEDE": {
           "type": "link",
           "settings": {
-            "text": "View Material",
+            "text": "Explore Material",
             "url": "shopify://pages/washi"
           }
         }
@@ -377,13 +281,16 @@
         "heading_neF44U",
         "link_jTKEDE"
       ],
+      "custom_css": [
+        ".section-spacing {padding-block-start: 0.1rem; padding-block-end: 0.1rem;}"
+      ],
       "settings": {
         "color_scheme": "",
         "image_size": "fill",
         "image": "shopify://shop_images/washi_CREWNECK_1.jpg",
         "allow_transparent_header": false,
         "reveal_on_scroll": true,
-        "remove_vertical_spacing": true,
+        "remove_vertical_spacing": false,
         "content_width": "sm",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
@@ -404,7 +311,7 @@
         "link_XBFT4M": {
           "type": "link",
           "settings": {
-            "text": "View Material",
+            "text": "Explore Material",
             "url": "shopify://pages/空紡"
           }
         }
@@ -455,6 +362,80 @@
         "horizontal_spacing_factor": 1,
         "vertical_spacing_factor": 1,
         "subheading": ""
+      }
+    },
+    "rich_text_QtjjhX": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_pYKXTM": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "heading_WFtYaW": {
+          "type": "heading",
+          "settings": {
+            "text": "Records",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_388dqW": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_pYKXTM",
+        "heading_WFtYaW",
+        "richtext_388dqW"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_overlay_9zmbdw": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_6FdRJh": {
+          "type": "heading",
+          "settings": {
+            "text": "Bristol",
+            "heading_tag": "h4"
+          }
+        },
+        "link_haDcbL": {
+          "type": "link",
+          "settings": {
+            "text": "Discover the Archive",
+            "url": "shopify://pages/in-bristol"
+          }
+        }
+      },
+      "block_order": [
+        "heading_6FdRJh",
+        "link_haDcbL"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "image_size": "auto",
+        "image": "shopify://shop_images/tb_bristol_3.jpg",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": true,
+        "remove_vertical_spacing": true,
+        "content_width": "sm",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 20
       }
     },
     "multi-column": {
@@ -843,15 +824,14 @@
   },
   "order": [
     "slideshow",
-    "image_with_text_TWPYwK",
-    "featured_collections_7knwzx",
-    "image_with_text_overlay_E9Y6HK",
-    "featured-collections",
+    "image_with_text_overlay_9wQt3Q",
     "image_with_text_overlay_D9tKMQ",
     "image_with_text_overlay_CNBk7V",
     "image_with_text_overlay_DxXGHw",
     "image_with_text_overlay_zEpncj",
     "featured_collections_EVhfjL",
+    "rich_text_QtjjhX",
+    "image_with_text_overlay_9zmbdw",
     "multi-column",
     "collection-list",
     "before-after",

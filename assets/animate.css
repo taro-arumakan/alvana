@@ -87,7 +87,7 @@
   grid-template-columns: 1fr;
   gap: 1rem;
   padding-bottom: 1rem;
-  /* max-width: 45rem; */
+  max-width: 45rem;
   margin: auto;
 }
 
@@ -192,7 +192,7 @@
 .images-list-item-horizontal {
   height: 100%;
 }
-img.images-list__image {
+.images-list-item-horizontal img{
   max-width: calc(100vw - var(--container-gutter) * 2);
   height: 100%;
   width: auto;

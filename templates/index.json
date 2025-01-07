@@ -199,10 +199,21 @@
             "link_text": "Explore Material"
           }
         },
+        "image_with_text_3YXrBg": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/washi_CREWNECK_1.jpg",
+            "title": "和紙 - Washi",
+            "heading_tag": "h3",
+            "content": "",
+            "link_url": "shopify://pages/washi",
+            "link_text": "Explore Material"
+          }
+        },
         "image_with_text_BJgpYj": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify://shop_images/bharat_denim_coverall_12.jpg",
+            "image": "shopify://shop_images/bharat_denim_coverall_8.jpg",
             "title": "Bharat Denim",
             "heading_tag": "h3",
             "content": "",
@@ -217,39 +228,84 @@
             "title": "空紡 - Kūbō",
             "heading_tag": "h3",
             "content": "",
-            "link_url": "shopify://pages/空紡",
-            "link_text": "Explore Material"
-          }
-        },
-        "image_with_text_3YXrBg": {
-          "type": "image_with_text",
-          "settings": {
-            "image": "shopify://shop_images/washi_CREWNECK_1.jpg",
-            "title": "和紙 - Washi",
-            "heading_tag": "h3",
-            "content": "",
-            "link_url": "shopify://pages/washi",
+            "link_url": "shopify://pages/kubo",
             "link_text": "Explore Material"
           }
         }
       },
       "block_order": [
         "image_with_text_kEHUnK",
+        "image_with_text_3YXrBg",
         "image_with_text_BJgpYj",
-        "image_with_text_9pqjrV",
-        "image_with_text_3YXrBg"
+        "image_with_text_9pqjrV"
       ],
       "settings": {
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-2",
         "separate_section_with_border": true,
         "columns_per_row": 3,
         "stack_on_mobile": true,
-        "overlap_image": true,
+        "overlap_image": false,
+        "content_alignment": "start",
+        "text_alignment": "end",
+        "spacing": "xs",
+        "subheading": "",
+        "title": "Materials",
+        "content": ""
+      }
+    },
+    "multi_column_LGryA7": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_tLLDke": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/in_bristol_27.jpg",
+            "title": "Bristol",
+            "heading_tag": "h5",
+            "content": "",
+            "link_url": "shopify://pages/in-bristol",
+            "link_text": "Discover the Archive"
+          }
+        },
+        "image_with_text_AxacJk": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2024ss_12.jpg",
+            "title": "2024 Spring & Summer",
+            "heading_tag": "h5",
+            "content": "",
+            "link_url": "shopify://pages/2024-spring-summer",
+            "link_text": "Discover the Archive"
+          }
+        },
+        "image_with_text_JFW837": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2024aw_3.jpg",
+            "title": "2024 Autumn & Winter",
+            "heading_tag": "h5",
+            "content": "",
+            "link_url": "shopify://pages/2024-autumn-winter",
+            "link_text": "Discover the Archive"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_tLLDke",
+        "image_with_text_AxacJk",
+        "image_with_text_JFW837"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "columns_per_row": 3,
+        "stack_on_mobile": true,
+        "overlap_image": false,
         "content_alignment": "start",
         "text_alignment": "start",
         "spacing": "xs",
         "subheading": "",
-        "title": "Materials",
+        "title": "Records",
         "content": ""
       }
     },
@@ -384,7 +440,7 @@
           "type": "link",
           "settings": {
             "text": "Explore Material",
-            "url": "shopify://pages/空紡"
+            "url": "shopify://pages/kubo"
           }
         }
       },
@@ -437,44 +493,6 @@
         "subheading": ""
       }
     },
-    "rich_text_QtjjhX": {
-      "type": "rich-text",
-      "blocks": {
-        "subheading_pYKXTM": {
-          "type": "subheading",
-          "disabled": true,
-          "settings": {
-            "text": "Subheading"
-          }
-        },
-        "heading_WFtYaW": {
-          "type": "heading",
-          "settings": {
-            "text": "Records",
-            "heading_tag": "h1"
-          }
-        },
-        "richtext_388dqW": {
-          "type": "richtext",
-          "disabled": true,
-          "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_pYKXTM",
-        "heading_WFtYaW",
-        "richtext_388dqW"
-      ],
-      "settings": {
-        "color_scheme": "scheme-2",
-        "separate_section_with_border": true,
-        "content_width": "sm",
-        "text_position": "center",
-        "remove_vertical_spacing": false
-      }
-    },
     "image_with_text_overlay_9zmbdw": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -497,6 +515,7 @@
         "heading_6FdRJh",
         "link_haDcbL"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "",
         "image_size": "auto",
@@ -899,12 +918,12 @@
     "slideshow",
     "image_with_text_overlay_9wQt3Q",
     "multi_column_QEjtLd",
+    "multi_column_LGryA7",
     "image_with_text_overlay_D9tKMQ",
     "image_with_text_overlay_CNBk7V",
     "image_with_text_overlay_DxXGHw",
     "image_with_text_overlay_zEpncj",
     "featured_collections_EVhfjL",
-    "rich_text_QtjjhX",
     "image_with_text_overlay_9zmbdw",
     "multi-column",
     "collection-list",

@@ -33,7 +33,13 @@
 
         <multi-column class="multi-column {% unless section.settings.stack_on_mobile %}scroll-area snap-x bleed md:unbleed{% endunless %}">
           {%- for block in section.blocks -%}
-            <div class="revealy_tran_tb multi-column__item {% if section.settings.overlap_image and block.settings.title != blank %}multi-column__item--overlap{% endif %} snap-center group" {{ block.shopify_attributes }}>
+
+            {%- liquid
+              assign trans_classes = "revealy_tran_bt,revealy_tran_rl,revealy_tran_lr,revealy_tran_tb" | split: ","
+              assign trans_class_index = "now" | date: "%N" | modulo: 4
+              assign trans_class = trans_classes[trans_class_index]
+            -%}
+            <div class="{{ trans_class }} multi-column__item {% if section.settings.overlap_image and block.settings.title != blank %}multi-column__item--overlap{% endif %} snap-center group" {{ block.shopify_attributes }}>
               {%- capture sizes_attribute -%}
                 (max-width: 699px) 53vw, (max-width: 999px) 38vw, calc((100vw - 3rem * 2) / {{ section.settings.columns_per_row }})
               {%- endcapture -%}

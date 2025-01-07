@@ -34,7 +34,7 @@
       {%- assign images = section.blocks | map: 'settings' | map: 'image' | compact -%}
       {%- assign trans_classes = "revealy_tran_bt,revealy_tran_rl,revealy_tran_lr,revealy_tran_tb" | split: "," %}
       {%- for block in section.blocks -%}
-        {%-  assign trans_class_index = forloop.index | minus: 1 | modulo: 4 -%}
+        {% assign trans_class_index = "now" | date: "%N" | modulo: 4 %}
         <div class="images-list-item {{ trans_classes[trans_class_index] }}">
           {%- liquid
             if images.size == 0 and forloop.first

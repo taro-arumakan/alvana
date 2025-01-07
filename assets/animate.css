@@ -91,7 +91,7 @@
   margin: auto;
 }
 .images-list__container.horizontal-scroll-area {
-  max-width: unset;
+  max-width: calc(100vw - max(var(--container-gutter), 50% - var(--container-max-width)));
 }
 
 .images-list-item:nth-of-type(10n+3) {

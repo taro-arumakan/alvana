@@ -1,0 +1,80 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "xs"
+      }
+    },
+    "image_with_text_mNthPc": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_4EgqEK": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "heading_bRBmL4": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Image with text",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_jT7A9D": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><strong>伝統への敬意とものづくりへのこだわり</strong><br/>日本が世界的に評価されているカットソーの伝統に深い敬意を払い、ものづくりを大切に続けています。信頼ある素材の開発と細部にまでこだわった商品を提供することに専念しています。</p><p><strong>テキスタイル</strong><br/>alvanaでは、糸の選定から生地の編み立て、染め工場との緊密な連携によるイメージづくりまで、素材が完成するまでのすべての工程を丁寧に行っています。この取り組みは日本国内にとどまらず、インドでの布帛素材開発や世界各地の独特な風合いを大切にする姿勢にも反映されています。</p><p><strong>素材開発</strong><br/>日本の創造性を活かし、新しい時代に向けた素材開発を日々追求しています。</p><p></p>"
+          }
+        },
+        "liquid_9qYnzq": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<style>\nhr {\n    margin-block-start: 6rem !important;\n}\n</style>\n<hr>"
+          }
+        },
+        "richtext_zyrmmR": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><strong>株式会社alvana</strong><br/>info@alvana.jp​</p><p><strong>Show Room </strong><br/>〒150-0001<br/>東京都渋谷区神宮前2-14-7-301</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_4EgqEK",
+        "heading_bRBmL4",
+        "richtext_jT7A9D",
+        "liquid_9qYnzq",
+        "richtext_zyrmmR"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "image": "shopify://shop_images/alvana_home_tag.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "end",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_mNthPc"
+  ]
+}

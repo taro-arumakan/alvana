@@ -32,10 +32,9 @@
         {%- render 'section-header', subheading: section.settings.subheading, heading: section.settings.title, content: section.settings.content, text_alignment: section.settings.content_alignment -%}
 
         <multi-column class="multi-column {% unless section.settings.stack_on_mobile %}scroll-area snap-x bleed md:unbleed{% endunless %}">
+          {%- assign trans_classes = "revealy_tran_bt,revealy_tran_rl,revealy_tran_lr,revealy_tran_tb" | split: "," -%}
           {%- for block in section.blocks -%}
-
             {%- liquid
-              assign trans_classes = "revealy_tran_bt,revealy_tran_rl,revealy_tran_lr,revealy_tran_tb" | split: ","
               assign trans_class_index = "now" | date: "%N" | modulo: 4
               assign trans_class = trans_classes[trans_class_index]
             -%}

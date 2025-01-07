@@ -11,8 +11,6 @@
       {%- endif -%}
     }
   </style>
-  <script src="{{ 'animate.js' | asset_url }}" defer></script>
-  {{- 'animate.css' | asset_url | stylesheet_tag: preload: true -}}
 
   <images-list class="images-list color-scheme color-scheme--{{ section.settings.color_scheme.id }}">
     {%- if section.settings.background_image or section.settings.mobile_background_image -%}

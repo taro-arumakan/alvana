@@ -67,6 +67,9 @@
       }
     </script>
 
+    <script src="{{ 'animate.js' | asset_url }}" defer></script>
+    {{- 'animate.css' | asset_url | stylesheet_tag: preload: true -}}
+
     <script type="module" src="{{ 'vendor.min.js' | asset_url }}"></script>
     <script type="module" src="{{ 'theme.js' | asset_url }}"></script>
 

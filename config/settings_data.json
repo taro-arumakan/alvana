@@ -59,7 +59,7 @@
       "scheme-3": {
         "settings": {
           "background": "#464646",
-          "background_gradient": "",
+          "background_gradient": "linear-gradient(46deg, rgba(70, 70, 70, 1) 13%, rgba(165, 165, 165, 1) 86%)",
           "text_color": "#ffffff",
           "primary_button_background": "#ffffff",
           "primary_button_text_color": "#464646",
@@ -265,6 +265,8 @@
     }
   },
   "platform_customizations": {
-    "custom_css": []
+    "custom_css": [
+      ".header-sidebar::part(content) {opacity: 95%;}"
+    ]
   }
 }

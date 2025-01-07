@@ -122,13 +122,13 @@ document.addEventListener("DOMContentLoaded", function () {
           }
           e.preventDefault(); // Prevent vertical scrolling within the area
           scrollElement.scrollLeft = lastScrollLeft + deltaY;
-          velocity = deltaY * 0.1; // Track velocity for momentum
+          velocity = deltaY * 0.15; // Track velocity for momentum
         }
         break;
 
       case "touchend":
         if (isVerticalSwipe) {
-          applyMomentum(scrollElement);
+          applyMomentum(scrollElement, velocity);
         }
         isTouching = false;
         break;
@@ -136,14 +136,14 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Apply momentum after touchend
-  function applyMomentum(scrollElement) {
+  function applyMomentum(scrollElement, velocityl) {
     if (isAnimating) return; // Prevent multiple momentum animations
     function momentumStep() {
-      velocity *= deceleration; // Reduce velocity
-      scrollElement.scrollLeft += velocity; // Apply velocity
+      velocityl *= deceleration; // Reduce velocity
+      scrollElement.scrollLeft += velocityl; // Apply velocity
 
       // Stop if velocity is minimal
-      if (Math.abs(velocity) > minVelocity) {
+      if (Math.abs(velocityl) > minVelocity) {
         requestAnimationFrame(momentumStep);
       } else {
         isAnimating = false; // Stop animation

@@ -170,6 +170,7 @@
         "subheading_HgcQjr",
         "richtext_8FE96F"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-4",
         "image_size": "auto",
@@ -182,6 +183,74 @@
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "overlay_color": "#000000",
         "overlay_opacity": 30
+      }
+    },
+    "multi_column_QEjtLd": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_kEHUnK": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/natural_twill_short_jacket_3.jpg",
+            "title": "Natural Twill",
+            "heading_tag": "h3",
+            "content": "",
+            "link_url": "shopify://pages/natural-twill",
+            "link_text": "Explore Material"
+          }
+        },
+        "image_with_text_BJgpYj": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/bharat_denim_coverall_12.jpg",
+            "title": "Bharat Denim",
+            "heading_tag": "h3",
+            "content": "",
+            "link_url": "shopify://pages/bharat-denim",
+            "link_text": "Explore Material"
+          }
+        },
+        "image_with_text_9pqjrV": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/kubo_tshirt_3.jpg",
+            "title": "空紡 - Kūbō",
+            "heading_tag": "h3",
+            "content": "",
+            "link_url": "shopify://pages/空紡",
+            "link_text": "Explore Material"
+          }
+        },
+        "image_with_text_3YXrBg": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/washi_CREWNECK_1.jpg",
+            "title": "和紙 - Washi",
+            "heading_tag": "h3",
+            "content": "",
+            "link_url": "shopify://pages/washi",
+            "link_text": "Explore Material"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_kEHUnK",
+        "image_with_text_BJgpYj",
+        "image_with_text_9pqjrV",
+        "image_with_text_3YXrBg"
+      ],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "separate_section_with_border": true,
+        "columns_per_row": 3,
+        "stack_on_mobile": true,
+        "overlap_image": true,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing": "xs",
+        "subheading": "",
+        "title": "Materials",
+        "content": ""
       }
     },
     "image_with_text_overlay_D9tKMQ": {
@@ -206,6 +275,7 @@
         "heading_TjHybE",
         "link_NdwgfH"
       ],
+      "disabled": true,
       "custom_css": [
         ".section-spacing {padding-block-start: 0.1rem; padding-block-end: 0.1rem;}"
       ],
@@ -245,6 +315,7 @@
         "heading_R9p9DJ",
         "link_VBMCpk"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "",
         "image_size": "fill",
@@ -281,6 +352,7 @@
         "heading_neF44U",
         "link_jTKEDE"
       ],
+      "disabled": true,
       "custom_css": [
         ".section-spacing {padding-block-start: 0.1rem; padding-block-end: 0.1rem;}"
       ],
@@ -320,6 +392,7 @@
         "heading_rxdkDL",
         "link_XBFT4M"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "",
         "image_size": "fill",
@@ -825,6 +898,7 @@
   "order": [
     "slideshow",
     "image_with_text_overlay_9wQt3Q",
+    "multi_column_QEjtLd",
     "image_with_text_overlay_D9tKMQ",
     "image_with_text_overlay_CNBk7V",
     "image_with_text_overlay_DxXGHw",

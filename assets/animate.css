@@ -90,6 +90,9 @@
   max-width: 45rem;
   margin: auto;
 }
+.images-list__container.horizontal-scroll-area {
+  max-width: unset;
+}
 
 .images-list-item:nth-of-type(10n+3) {
   width: 80%;

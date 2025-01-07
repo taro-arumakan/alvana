@@ -253,6 +253,42 @@
         "content": ""
       }
     },
+    "image_with_text_overlay_DUFrkA": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_9CVFJi": {
+          "type": "heading",
+          "settings": {
+            "text": "",
+            "heading_tag": "h4"
+          }
+        },
+        "richtext_BYTj7A": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>時間の記録。<br/>アーカイブを重ね合わせることで新しい「モノ」が生まれる。固定概念にとらわれない、新しい時代に向けた商品づくり。</p><p>A chronicle of moments.<br/>New creations emerge as archives intertwine.<br/>Crafting products for a new era, free from the confines of convention.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_9CVFJi",
+        "richtext_BYTj7A"
+      ],
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "image_size": "lg",
+        "image": "shopify://shop_images/tb_bristol_3.jpg",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": true,
+        "remove_vertical_spacing": true,
+        "content_width": "md",
+        "mobile_text_position": "place-self-end-start text-start",
+        "desktop_text_position": "sm:place-self-end-center sm:text-center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 20
+      }
+    },
     "multi_column_LGryA7": {
       "type": "multi-column",
       "blocks": {
@@ -297,7 +333,7 @@
       ],
       "settings": {
         "color_scheme": "scheme-2",
-        "separate_section_with_border": true,
+        "separate_section_with_border": false,
         "columns_per_row": 3,
         "stack_on_mobile": true,
         "overlap_image": false,
@@ -918,6 +954,7 @@
     "slideshow",
     "image_with_text_overlay_9wQt3Q",
     "multi_column_QEjtLd",
+    "image_with_text_overlay_DUFrkA",
     "multi_column_LGryA7",
     "image_with_text_overlay_D9tKMQ",
     "image_with_text_overlay_CNBk7V",

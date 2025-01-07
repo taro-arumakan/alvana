@@ -71,12 +71,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function isElementFullyInView(element) {
     const rect = element.getBoundingClientRect();
-    var in_view = (
-      rect.top >= 0
+    const gap = 30;
+    return  (
+      rect.top >= -gap
        &&
-      rect.bottom <= window.innerHeight
+      rect.bottom <= window.innerHeight + gap
     );
-    return in_view;
   }
 
   function handleSwipe(e) {
@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       case "touchend":
         if (isVerticalSwipe) {
-          applyMomentum();
+          applyMomentum(scrollElement);
         }
         isTouching = false;
         break;
@@ -136,10 +136,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Apply momentum after touchend
-  function applyMomentum() {
+  function applyMomentum(scrollElement) {
     if (isAnimating) return; // Prevent multiple momentum animations
-    isAnimating = true;
-
     function momentumStep() {
       velocity *= deceleration; // Reduce velocity
       scrollElement.scrollLeft += velocity; // Apply velocity

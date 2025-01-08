@@ -32,6 +32,8 @@
 
     <div class="horizontal-scroll-area images-list__container container container--md">
       {%- assign images = section.blocks | map: 'settings' | map: 'image' | compact -%}
+      {%- assign align_classes = "align-bottom,align-top,align-mid-bottom,align-mid-top,align-almost-bottom,align-almost-top,align-center" | split: "," %}
+
       {%- for block in section.blocks -%}
         {% liquid
           if forloop.index == 1
@@ -43,8 +45,10 @@
             assign trans_class_index = forloop.index | minus: 1 | modulo: 4
             assign trans_class = trans_classes[ trans_class_index ]
           endif
+          assign align_class_index = "now" | date: "%N" | modulo: align_classes.size
+          assign align_class = align_classes[align_class_index]
         %}
-        <div class="images-list-item-horizontal {{ trans_class }}">
+        <div class="images-list-item-horizontal {{ trans_class }} {{ align_class }}">
           {%- liquid
             if images.size == 0 and forloop.first
               echo 'image' | placeholder_svg_tag: 'images-with-text-scroll__image placeholder'

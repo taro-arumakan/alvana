@@ -44,7 +44,7 @@
         "reduce_padding": false,
         "logo": "{{ shop.brand.logo }}",
         "logo_max_width": 140,
-        "logo_mobile_max_width": 100,
+        "logo_mobile_max_width": 80,
         "menu": "main-menu",
         "sidebar_menu": "",
         "menu_open_trigger": "hover",

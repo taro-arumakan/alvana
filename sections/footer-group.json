@@ -94,24 +94,14 @@
             "show_menu_title": false,
             "menu_title": ""
           }
-        },
-        "text": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "title": "About",
-            "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme editor.</p>",
-            "enable_follow_on_shop": true
-          }
         }
       },
       "block_order": [
         "newsletter",
-        "links",
-        "text"
+        "links"
       ],
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-2",
         "separate_section_with_border": false,
         "show_social_media": true,
         "show_payment_icons": true,

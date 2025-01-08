@@ -10,6 +10,7 @@
 {
   "current": {
     "section_vertical_spacing": "md",
+    "default_color_scheme": "scheme-2",
     "product_rating_color": "#1c1c1c",
     "product_on_sale_accent": "#e32c2b",
     "product_sold_out_badge_background": "#efefef",
@@ -29,7 +30,7 @@
     "color_swatch_config": "PINK GOLD: #D7A9A3\nBLACK: #000000\nINDIGO: #4B0082\nGRAY×BLACK: #555555 (approximation of gray blended with black)\nBLUE: #0000FF\nECRE: #C2B280\nNATURAL: #EDE6D6\nBROWN: #A52A2A\nDARK GRAY: #A9A9A9\nINK BLACK: #101010",
     "discount_mode": "percentage",
     "cart_type": "drawer",
-    "cart_icon": "shopping_bag_sharp",
+    "cart_icon": "shopping_bag",
     "social_instagram": "https://www.instagram.com/alvana_official",
     "favicon": "shopify://shop_images/a.png",
     "content_for_index": [],

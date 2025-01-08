@@ -35,7 +35,7 @@
           {%- assign trans_classes = "revealy_tran_bt,revealy_tran_rl,revealy_tran_lr,revealy_tran_tb" | split: "," -%}
           {%- for block in section.blocks -%}
             {%- liquid
-              assign trans_class_index = "now" | date: "%N" | modulo: 4
+              assign trans_class_index = "now" | date: "%N" | modulo: trans_classes.size
               assign trans_class = trans_classes[trans_class_index]
             -%}
             <div class="{{ trans_class }} multi-column__item {% if section.settings.overlap_image and block.settings.title != blank %}multi-column__item--overlap{% endif %} snap-center group" {{ block.shopify_attributes }}>

@@ -42,7 +42,7 @@
             assign trans_class = 'revealy_tran_tb'
           else
             assign trans_classes = "revealx_tran_bt,revealx_tran_rl,revealx_tran_lr,revealx_tran_tb" | split: ","
-            assign trans_class_index = forloop.index | minus: 1 | modulo: 4
+            assign trans_class_index = forloop.index | minus: 1 | modulo: trans_classes.size
             assign trans_class = trans_classes[ trans_class_index ]
           endif
           assign align_class_index = "now" | date: "%N" | modulo: align_classes.size

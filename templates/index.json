@@ -239,6 +239,13 @@
         "image_with_text_BJgpYj",
         "image_with_text_9pqjrV"
       ],
+      "custom_css": [
+        ".container {--container-gutter: 0.5rem;}",
+        "h2 {padding-left: 1.25rem;}",
+        ".prose {margin-right: 1rem;}",
+        ".multi-column__item {gap: 0.6rem;}",
+        ".prose :where(:not(meta, span) + *) {margin-block-start: 0.2rem;}"
+      ],
       "settings": {
         "color_scheme": "scheme-2",
         "separate_section_with_border": true,
@@ -295,9 +302,20 @@
         "image_with_text_tLLDke": {
           "type": "image_with_text",
           "settings": {
+            "image": "shopify://shop_images/2025ss_50.jpg",
+            "title": "2025 Spring & Summer",
+            "heading_tag": "h6",
+            "content": "",
+            "link_url": "shopify://pages/2025-spring-summer",
+            "link_text": "Discover the Archive"
+          }
+        },
+        "image_with_text_Cj8BA7": {
+          "type": "image_with_text",
+          "settings": {
             "image": "shopify://shop_images/in_bristol_27.jpg",
             "title": "Bristol",
-            "heading_tag": "h5",
+            "heading_tag": "h6",
             "content": "",
             "link_url": "shopify://pages/in-bristol",
             "link_text": "Discover the Archive"
@@ -308,7 +326,7 @@
           "settings": {
             "image": "shopify://shop_images/2024ss_12.jpg",
             "title": "2024 Spring & Summer",
-            "heading_tag": "h5",
+            "heading_tag": "h6",
             "content": "",
             "link_url": "shopify://pages/2024-spring-summer",
             "link_text": "Discover the Archive"
@@ -319,7 +337,7 @@
           "settings": {
             "image": "shopify://shop_images/2024aw_3.jpg",
             "title": "2024 Autumn & Winter",
-            "heading_tag": "h5",
+            "heading_tag": "h6",
             "content": "",
             "link_url": "shopify://pages/2024-autumn-winter",
             "link_text": "Discover the Archive"
@@ -328,6 +346,7 @@
       },
       "block_order": [
         "image_with_text_tLLDke",
+        "image_with_text_Cj8BA7",
         "image_with_text_AxacJk",
         "image_with_text_JFW837"
       ],
@@ -335,10 +354,10 @@
         "color_scheme": "scheme-2",
         "separate_section_with_border": false,
         "columns_per_row": 3,
-        "stack_on_mobile": true,
+        "stack_on_mobile": false,
         "overlap_image": false,
         "content_alignment": "start",
-        "text_alignment": "start",
+        "text_alignment": "center",
         "spacing": "xs",
         "subheading": "",
         "title": "Records",

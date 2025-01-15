@@ -79,6 +79,11 @@ document.addEventListener("DOMContentLoaded", function () {
     );
   }
 
+  function hideRightArrow(el) {
+    const rightArrow = el.querySelector('.horizontal-scroll-area-right-arrow');
+    rightArrow.style.opacity = '0';
+  }
+
   function handleSwipe(e) {
     if (!('ontouchstart' in window)) return;
     const scrollElement = e.currentTarget;
@@ -124,6 +129,7 @@ document.addEventListener("DOMContentLoaded", function () {
           scrollElement.scrollLeft = lastScrollLeft + deltaY;
           velocity = deltaY * 0.15; // Track velocity for momentum
         }
+        hideRightArrow(scrollElement);
         break;
 
       case "touchend":
@@ -173,6 +179,7 @@ document.addEventListener("DOMContentLoaded", function () {
         e.preventDefault();
         scrollElement.scrollLeft += deltaY;
       }
+      hideRightArrow(scrollElement);
     }
   }
 

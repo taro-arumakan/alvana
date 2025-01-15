@@ -63,6 +63,14 @@
             endif
           -%}
         </div>
+        {%- if forloop.index == 1 -%}
+          <div class='horizontal-scroll-area-right-arrow'>
+            <svg width="58" height="82" viewBox="0 0 58 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M37.9043 43.9758L0.528314 81.7358L0.784313 71.2398L30.9923 40.9038L0.784313 10.5678L0.528314 0.839844L37.9043 38.0878V43.9758Z" fill="black" fill-opacity="0.7"/>
+              <path d="M57.8291 43.9758L20.4531 81.7358L20.7091 71.2398L50.9171 40.9038L20.7091 10.5678L20.4531 0.839844L57.8291 38.0878V43.9758Z" fill="black" fill-opacity="0.7"/>
+            </svg>
+          </div>
+        {%- endif -%}
       {%- endfor -%}
     </div>
   </images-list-horizontal>

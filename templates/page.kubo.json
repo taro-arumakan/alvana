@@ -46,6 +46,7 @@
         "color_scheme": "",
         "image_size": "fill",
         "image": "shopify://shop_images/kubo_material_1.jpg",
+        "image_url": "",
         "allow_transparent_header": false,
         "reveal_on_scroll": true,
         "remove_vertical_spacing": true,
@@ -189,6 +190,7 @@
       "block_order": [
         "collection_ryiJBX"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": false,
@@ -200,6 +202,35 @@
         "vertical_spacing_factor": 1,
         "subheading": ""
       }
+    },
+    "image_with_text_overlay_tq7mWK": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_epCqCj": {
+          "type": "heading",
+          "settings": {
+            "text": "空紡 products - coming soon",
+            "heading_tag": "h6"
+          }
+        }
+      },
+      "block_order": [
+        "heading_epCqCj"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "image_size": "xs",
+        "image": "shopify://shop_images/kubo_material_0.jpg",
+        "image_url": "",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": true,
+        "remove_vertical_spacing": true,
+        "content_width": "md",
+        "mobile_text_position": "place-self-end-start text-start",
+        "desktop_text_position": "sm:place-self-center-start sm:text-start",
+        "overlay_color": "#000000",
+        "overlay_opacity": 15
+      }
     }
   },
   "order": [
@@ -208,6 +239,7 @@
     "images_list_horizontal_4xV4gi",
     "images_list_MHe8ty",
     "images_list_horizontal_NzAb7G",
-    "featured_collections_QNady7"
+    "featured_collections_QNady7",
+    "image_with_text_overlay_tq7mWK"
   ]
 }

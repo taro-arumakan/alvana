@@ -22,6 +22,9 @@
   {%- endcomment -%}
 
   <div class="{% unless section.settings.remove_vertical_spacing %}section-spacing{% endunless %} color-scheme color-scheme--{{ section.settings.color_scheme.id }} color-scheme--with-image-overlay" {% if section.settings.allow_transparent_header %}allow-transparent-header{% endif %}>
+    {%- if section.settings.image_url != blank -%}
+      <a href="{{ section.settings.image_url }}" >
+    {% endif %}
     <image-with-text-overlay class="content-over-media content-over-media--{{ section.settings.image_size }}" reveal-on-scroll="{{ section.settings.reveal_on_scroll }}">
       {%- if section.settings.image != blank -%}
         <picture>
@@ -86,6 +89,9 @@
         </div>
       {%- endif -%}
     </image-with-text-overlay>
+    {%- if section.settings.image_url != blank -%}
+      </a>
+    {% endif %}
   </div>
 {%- endif -%}
 
@@ -149,6 +155,11 @@
       "id": "mobile_image",
       "label": "t:global.image.mobile_image",
       "info": "t:sections.image_with_text_overlay.mobile_image_size_recommendation"
+    },
+    {
+      "type": "url",
+      "id": "image_url",
+      "label": "Image URL"
     },
     {
       "type": "checkbox",

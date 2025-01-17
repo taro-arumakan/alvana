@@ -1,0 +1,145 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "xs"
+      }
+    },
+    "image_with_text_overlay_xPk89U": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_Ae9eWh": {
+          "type": "heading",
+          "settings": {
+            "text": "2025 Spring & Summer",
+            "heading_tag": "h5"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Ae9eWh"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "image_size": "fill",
+        "image": "shopify://shop_images/2025ss_64_jpg.webp",
+        "image_url": "shopify://pages/2025-spring-summer",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": true,
+        "remove_vertical_spacing": true,
+        "content_width": "sm",
+        "mobile_text_position": "place-self-end text-end",
+        "desktop_text_position": "sm:place-self-end-center sm:text-center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 20
+      }
+    },
+    "image_with_text_overlay_dwUGia": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_iUzHmc": {
+          "type": "heading",
+          "settings": {
+            "text": "Bristol",
+            "heading_tag": "h4"
+          }
+        }
+      },
+      "block_order": [
+        "heading_iUzHmc"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "image_size": "fill",
+        "image": "shopify://shop_images/in_bristol_25.jpg",
+        "image_url": "shopify://pages/in-bristol",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": true,
+        "remove_vertical_spacing": true,
+        "content_width": "md",
+        "mobile_text_position": "place-self-end-start text-start",
+        "desktop_text_position": "sm:place-self-end-start sm:text-start",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "image_with_text_overlay_fchyAD": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_MpKmD8": {
+          "type": "heading",
+          "settings": {
+            "text": "2024 Autumn & Winter",
+            "heading_tag": "h5"
+          }
+        }
+      },
+      "block_order": [
+        "heading_MpKmD8"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "image_size": "fill",
+        "image": "shopify://shop_images/2024aw_3.jpg",
+        "image_url": "shopify://pages/2024-autumn-winter",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": true,
+        "remove_vertical_spacing": true,
+        "content_width": "sm",
+        "mobile_text_position": "place-self-end text-end",
+        "desktop_text_position": "sm:place-self-end sm:text-end",
+        "overlay_color": "#000000",
+        "overlay_opacity": 5
+      }
+    },
+    "image_with_text_overlay_dTzqXU": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_TgFQc9": {
+          "type": "heading",
+          "settings": {
+            "text": "2024 Spring & Summer",
+            "heading_tag": "h5"
+          }
+        }
+      },
+      "block_order": [
+        "heading_TgFQc9"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "image_size": "fill",
+        "image": "shopify://shop_images/2024ss_35.jpg",
+        "image_url": "shopify://pages/2024-spring-summer",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": true,
+        "remove_vertical_spacing": true,
+        "content_width": "sm",
+        "mobile_text_position": "place-self-end-start text-start",
+        "desktop_text_position": "sm:place-self-end-center sm:text-center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 26
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_overlay_xPk89U",
+    "image_with_text_overlay_dwUGia",
+    "image_with_text_overlay_fchyAD",
+    "image_with_text_overlay_dTzqXU"
+  ]
+}

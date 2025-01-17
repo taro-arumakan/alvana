@@ -12,18 +12,43 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "image_3VVayg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2025ss_64_jpg.webp",
+            "subheading": "",
+            "title": "2025 Spring & Summer",
+            "mobile_text_position": "place-self-end text-end",
+            "desktop_text_position": "sm:place-self-end sm:text-end",
+            "content_max_width": 780,
+            "button_1_text": "",
+            "button_1_link": "shopify://pages/2025-spring-summer",
+            "button_1_style": "solid",
+            "button_1_background": "#ffffff",
+            "button_1_text_color": "#000000",
+            "button_2_text": "",
+            "button_2_link": "shopify://pages/2025-spring-summer",
+            "button_2_style": "outline",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#000000",
+            "background": "",
+            "background_opacity": 50,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": ""
+          }
+        },
         "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/alvana_top_pc_1.png",
-            "mobile_image": "shopify://shop_images/alvana_top_mobile_1.jpg",
+            "image": "shopify://shop_images/natural_twill_01.jpg",
             "subheading": "",
-            "title": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "title": "Natural Twill",
+            "mobile_text_position": "place-self-end text-end",
+            "desktop_text_position": "sm:place-self-end sm:text-end",
             "content_max_width": 1200,
             "button_1_text": "",
-            "button_1_link": "",
+            "button_1_link": "shopify://pages/natural-twill",
             "button_1_style": "solid",
             "button_1_background": "#ffffff",
             "button_1_text_color": "#000000",
@@ -42,15 +67,14 @@
         "slide-2": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/alvana_top_pc_2.png",
-            "mobile_image": "shopify://shop_images/alvana_top_mobile_2.jpg",
+            "image": "shopify://shop_images/washi_CREWNECK_2.jpg",
             "subheading": "",
-            "title": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "title": "和紙 - Washi",
+            "mobile_text_position": "place-self-end text-end",
+            "desktop_text_position": "sm:place-self-end sm:text-end",
             "content_max_width": 780,
             "button_1_text": "",
-            "button_1_link": "",
+            "button_1_link": "shopify://pages/washi",
             "button_1_style": "solid",
             "button_1_background": "#ffffff",
             "button_1_text_color": "#000000",
@@ -69,20 +93,19 @@
         "image_YfY9VY": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/alvana_top_pc_3.png",
-            "mobile_image": "shopify://shop_images/alvana_top_mobile_3.jpg",
+            "image": "shopify://shop_images/2025ss_4.jpg",
             "subheading": "",
-            "title": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "title": "Bharat Denim",
+            "mobile_text_position": "place-self-end text-end",
+            "desktop_text_position": "sm:place-self-end sm:text-end",
             "content_max_width": 780,
             "button_1_text": "",
-            "button_1_link": "",
+            "button_1_link": "shopify://pages/bharat-denim",
             "button_1_style": "solid",
             "button_1_background": "#ffffff",
             "button_1_text_color": "#000000",
             "button_2_text": "",
-            "button_2_link": "",
+            "button_2_link": "shopify://pages/bharat-denim",
             "button_2_style": "outline",
             "button_2_background": "#ffffff",
             "button_2_text_color": "#000000",
@@ -96,23 +119,22 @@
         "image_aPVcee": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/alvana_top_pc_4.png",
-            "mobile_image": "shopify://shop_images/alvana_top_mobile_4.jpg",
+            "image": "shopify://shop_images/2025ss_12.jpg",
             "subheading": "",
-            "title": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "title": "空紡 - Kūbō",
+            "mobile_text_position": "place-self-end text-end",
+            "desktop_text_position": "sm:place-self-end sm:text-end",
             "content_max_width": 780,
             "button_1_text": "",
-            "button_1_link": "",
+            "button_1_link": "shopify://pages/kubo",
             "button_1_style": "solid",
             "button_1_background": "#ffffff",
-            "button_1_text_color": "#000000",
+            "button_1_text_color": "#ffffff",
             "button_2_text": "",
             "button_2_link": "",
             "button_2_style": "outline",
             "button_2_background": "#ffffff",
-            "button_2_text_color": "#000000",
+            "button_2_text_color": "#ffffff",
             "background": "",
             "background_opacity": 50,
             "text_color": "#ffffff",
@@ -122,16 +144,19 @@
         }
       },
       "block_order": [
+        "image_3VVayg",
         "slide-1",
         "slide-2",
         "image_YfY9VY",
         "image_aPVcee"
       ],
-      "disabled": true,
+      "custom_css": [
+        ".h1,:where(.prose h1) {font-size: 1.1rem; line-height: 1.5;}"
+      ],
       "settings": {
         "allow_transparent_header": true,
         "show_next_section_button": false,
-        "media_size": "auto",
+        "media_size": "fill",
         "show_initial_transition": false,
         "autoplay": true,
         "autoplay_pause_on_video": true,
@@ -140,60 +165,15 @@
         "controls_color": "#ffffff"
       }
     },
-    "image_with_text_overlay_9wQt3Q": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "heading_pJVbC3": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "text": "Materials",
-            "heading_tag": "h4"
-          }
-        },
-        "subheading_HgcQjr": {
-          "type": "subheading",
-          "disabled": true,
-          "settings": {
-            "text": "Subheading"
-          }
-        },
-        "richtext_8FE96F": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Our Materials</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_pJVbC3",
-        "subheading_HgcQjr",
-        "richtext_8FE96F"
-      ],
-      "disabled": true,
-      "settings": {
-        "color_scheme": "scheme-4",
-        "image_size": "auto",
-        "image": "shopify://shop_images/nepal_4_4c5f6a11-b492-47a9-a28f-011e5c0536ff.jpg",
-        "allow_transparent_header": true,
-        "reveal_on_scroll": true,
-        "remove_vertical_spacing": true,
-        "content_width": "md",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "overlay_color": "#000000",
-        "overlay_opacity": 30
-      }
-    },
     "multi_column_QEjtLd": {
       "type": "multi-column",
       "blocks": {
         "image_with_text_kEHUnK": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify://shop_images/natural_twill_short_jacket_3.jpg",
+            "image": "shopify://shop_images/natural_twill_02_up.jpg",
             "title": "Natural Twill",
-            "heading_tag": "h3",
+            "heading_tag": "h6",
             "content": "",
             "link_url": "shopify://pages/natural-twill",
             "link_text": "Explore Material"
@@ -204,7 +184,7 @@
           "settings": {
             "image": "shopify://shop_images/washi_CREWNECK_1.jpg",
             "title": "和紙 - Washi",
-            "heading_tag": "h3",
+            "heading_tag": "h6",
             "content": "",
             "link_url": "shopify://pages/washi",
             "link_text": "Explore Material"
@@ -215,7 +195,7 @@
           "settings": {
             "image": "shopify://shop_images/bharat_denim_coverall_8.jpg",
             "title": "Bharat Denim",
-            "heading_tag": "h3",
+            "heading_tag": "h6",
             "content": "",
             "link_url": "shopify://pages/bharat-denim",
             "link_text": "Explore Material"
@@ -226,7 +206,7 @@
           "settings": {
             "image": "shopify://shop_images/kubo_tshirt_3.jpg",
             "title": "空紡 - Kūbō",
-            "heading_tag": "h3",
+            "heading_tag": "h6",
             "content": "",
             "link_url": "shopify://pages/kubo",
             "link_text": "Explore Material"
@@ -244,13 +224,14 @@
         "h2 {padding-left: 1.25rem;}",
         ".prose {margin-right: 1rem;}",
         ".multi-column__item {gap: 0.6rem;}",
-        ".prose :where(:not(meta, span) + *) {margin-block-start: 0.2rem;}"
+        ".prose :where(:not(meta, span) + *) {margin-block-start: 0.2rem;}",
+        "a {font-size: 0.8rem; line-height: 1.6;}"
       ],
       "settings": {
         "color_scheme": "scheme-2",
         "separate_section_with_border": true,
-        "columns_per_row": 3,
-        "stack_on_mobile": true,
+        "columns_per_row": 4,
+        "stack_on_mobile": false,
         "overlap_image": false,
         "content_alignment": "start",
         "text_alignment": "end",
@@ -286,6 +267,7 @@
         "color_scheme": "scheme-3",
         "image_size": "lg",
         "image": "shopify://shop_images/tb_bristol_3.jpg",
+        "image_url": "",
         "allow_transparent_header": false,
         "reveal_on_scroll": true,
         "remove_vertical_spacing": true,
@@ -321,17 +303,6 @@
             "link_text": "Discover the Archive"
           }
         },
-        "image_with_text_AxacJk": {
-          "type": "image_with_text",
-          "settings": {
-            "image": "shopify://shop_images/2024ss_12.jpg",
-            "title": "2024 Spring & Summer",
-            "heading_tag": "h6",
-            "content": "",
-            "link_url": "shopify://pages/2024-spring-summer",
-            "link_text": "Discover the Archive"
-          }
-        },
         "image_with_text_JFW837": {
           "type": "image_with_text",
           "settings": {
@@ -342,25 +313,36 @@
             "link_url": "shopify://pages/2024-autumn-winter",
             "link_text": "Discover the Archive"
           }
+        },
+        "image_with_text_AxacJk": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2024ss_12.jpg",
+            "title": "2024 Spring & Summer",
+            "heading_tag": "h6",
+            "content": "",
+            "link_url": "shopify://pages/2024-spring-summer",
+            "link_text": "Discover the Archive"
+          }
         }
       },
       "block_order": [
         "image_with_text_tLLDke",
         "image_with_text_Cj8BA7",
-        "image_with_text_AxacJk",
-        "image_with_text_JFW837"
+        "image_with_text_JFW837",
+        "image_with_text_AxacJk"
       ],
       "settings": {
         "color_scheme": "scheme-2",
         "separate_section_with_border": false,
-        "columns_per_row": 3,
+        "columns_per_row": 4,
         "stack_on_mobile": false,
         "overlap_image": false,
         "content_alignment": "start",
         "text_alignment": "center",
         "spacing": "xs",
         "subheading": "",
-        "title": "Records",
+        "title": "<a href=\"/pages/archives\" title=\"Archives\">Archives</a>",
         "content": ""
       }
     },
@@ -394,6 +376,7 @@
         "color_scheme": "",
         "image_size": "fill",
         "image": "shopify://shop_images/material_2.jpg",
+        "image_url": "",
         "allow_transparent_header": true,
         "reveal_on_scroll": true,
         "remove_vertical_spacing": false,
@@ -431,6 +414,7 @@
         "color_scheme": "",
         "image_size": "fill",
         "image": "shopify://shop_images/bharat_denim_coverall_12.jpg",
+        "image_url": "",
         "allow_transparent_header": false,
         "reveal_on_scroll": true,
         "remove_vertical_spacing": true,
@@ -471,6 +455,7 @@
         "color_scheme": "",
         "image_size": "fill",
         "image": "shopify://shop_images/washi_CREWNECK_1.jpg",
+        "image_url": "",
         "allow_transparent_header": false,
         "reveal_on_scroll": true,
         "remove_vertical_spacing": false,
@@ -508,6 +493,7 @@
         "color_scheme": "",
         "image_size": "fill",
         "image": "shopify://shop_images/kubo_tshirt_3.jpg",
+        "image_url": "",
         "allow_transparent_header": false,
         "reveal_on_scroll": true,
         "remove_vertical_spacing": true,
@@ -575,6 +561,7 @@
         "color_scheme": "",
         "image_size": "auto",
         "image": "shopify://shop_images/tb_bristol_3.jpg",
+        "image_url": "",
         "allow_transparent_header": false,
         "reveal_on_scroll": true,
         "remove_vertical_spacing": true,
@@ -971,7 +958,6 @@
   },
   "order": [
     "slideshow",
-    "image_with_text_overlay_9wQt3Q",
     "multi_column_QEjtLd",
     "image_with_text_overlay_DUFrkA",
     "multi_column_LGryA7",

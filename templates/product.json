@@ -38,13 +38,6 @@
           "disabled": true,
           "settings": {}
         },
-        "description": {
-          "type": "description",
-          "settings": {
-            "collapse_content": false,
-            "show_below_gallery": true
-          }
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -79,6 +72,36 @@
             "stack_products": false,
             "show_quick_buy": true
           }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "collapse_content": true,
+            "open_by_default": true,
+            "show_below_gallery": true
+          }
+        },
+        "accordion_Jy8j4X": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": true,
+            "icon": "none",
+            "title": "Size Table",
+            "content": "",
+            "liquid": "{{ product.metafields.custom.size_table_html }}",
+            "page": ""
+          }
+        },
+        "accordion_DCya7w": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": true,
+            "icon": "none",
+            "title": "Product Care",
+            "content": "{{ product.metafields.custom.product_care | metafield_tag }}",
+            "liquid": "",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -87,11 +110,13 @@
         "price",
         "payment_terms",
         "separator",
-        "description",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "complementary_products"
+        "complementary_products",
+        "description",
+        "accordion_Jy8j4X",
+        "accordion_DCya7w"
       ],
       "settings": {
         "color_scheme": "",
@@ -99,7 +124,7 @@
         "product_info_size": 35,
         "show_sticky_add_to_cart": true,
         "center_basic_info": false,
-        "desktop_media_layout": "grid",
+        "desktop_media_layout": "carousel_thumbnails_bottom",
         "desktop_media_grid_gap": 30,
         "mobile_controls": "thumbnails",
         "enable_media_autoplay": false,

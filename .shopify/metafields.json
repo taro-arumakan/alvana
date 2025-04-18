@@ -1,7 +1,6 @@
 {
   "article": [],
   "blog": [],
-  "brand": [],
   "collection": [],
   "company": [],
   "company_location": [],
@@ -68,6 +67,26 @@
       "type": {
         "name": "list.metaobject_reference",
         "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "product_care",
+      "namespace": "custom",
+      "name": "product_care",
+      "description": "product care section shown in product page as a collapsible text",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "size_table_html",
+      "namespace": "custom",
+      "name": "size_table_html",
+      "description": "size table in html, shown in product pages as a collapsible text field",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
       }
     }
   ],

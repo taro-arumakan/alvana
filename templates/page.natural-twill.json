@@ -46,53 +46,13 @@
         "color_scheme": "",
         "image_size": "fill",
         "image": "shopify://shop_images/twillfabric02.jpg",
+        "image_url": "",
         "allow_transparent_header": false,
         "reveal_on_scroll": true,
         "remove_vertical_spacing": true,
         "content_width": "md",
         "mobile_text_position": "place-self-end-center text-center",
         "desktop_text_position": "sm:place-self-end-center sm:text-center",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
-      }
-    },
-    "images_list_horizontal_4xV4gi": {
-      "type": "images-list-horizontal",
-      "blocks": {
-        "image_RRkebm": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/natural_twill_short_jacket_6.jpg"
-          }
-        },
-        "image_4xTbek": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/natural_twill_short_jacket_7.jpg"
-          }
-        },
-        "image_3AkkUb": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/natural_twill_short_jacket_8.jpg"
-          }
-        },
-        "image_yqWiJW": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/natural_twill_short_jacket_9.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "image_RRkebm",
-        "image_4xTbek",
-        "image_3AkkUb",
-        "image_yqWiJW"
-      ],
-      "settings": {
-        "color_scheme": "",
-        "image_position": "center",
         "overlay_color": "#000000",
         "overlay_opacity": 0
       }
@@ -228,6 +188,47 @@
         "overlay_opacity": 0
       }
     },
+    "images_list_horizontal_4xV4gi": {
+      "type": "images-list-horizontal",
+      "blocks": {
+        "image_RRkebm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/natural_twill_short_jacket_6.jpg"
+          }
+        },
+        "image_4xTbek": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/natural_twill_short_jacket_7.jpg"
+          }
+        },
+        "image_3AkkUb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/natural_twill_short_jacket_8.jpg"
+          }
+        },
+        "image_yqWiJW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/natural_twill_short_jacket_9.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_RRkebm",
+        "image_4xTbek",
+        "image_3AkkUb",
+        "image_yqWiJW"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "image_position": "center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
     "featured_collections_QNady7": {
       "type": "featured-collections",
       "blocks": {
@@ -261,9 +262,9 @@
   "order": [
     "main",
     "image_with_text_overlay_iJzzCF",
-    "images_list_horizontal_4xV4gi",
     "images_list_MHe8ty",
     "images_list_horizontal_NzAb7G",
+    "images_list_horizontal_4xV4gi",
     "featured_collections_QNady7"
   ]
 }

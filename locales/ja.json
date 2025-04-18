@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "general": {
     "page": "ページ {{ page }}",
@@ -47,7 +56,7 @@
       "subscribed_successfully": "メールマガジンへの登録が完了しました"
     },
     "localization": {
-      "country": "国\/地域",
+      "country": "国/地域",
       "language": "言語"
     },
     "privacy_banner": {
@@ -83,7 +92,7 @@
   },
   "product": {
     "general": {
-      "description": "説明文",
+      "description": "Description",
       "add_to_cart_button": "カートに追加",
       "pre_order_button": "先行予約",
       "sold_out_button": "売り切れ",
@@ -99,7 +108,7 @@
       "view_in_space": "自分のスペースで見る",
       "taxes_included": "税込み価格",
       "taxes_excluded": "税抜き価格",
-      "shipping_policy_html": "<a href=\"{{ link }}\" class=\"link\">配送料<\/a>は購入手続き時に計算されます。",
+      "shipping_policy_html": "<a href=\"{{ link }}\" class=\"link\">配送料</a>は購入手続き時に計算されます。",
       "size_chart": "サイズ表",
       "available_colors_count": {
         "one": "{{ count }} カラー対応",
@@ -124,7 +133,9 @@
       "cannot_add_more": "これ以上追加できません"
     },
     "rating_count": {
-      "other": "{{ count }}件"
+      "other": "{{ count }}件",
+      "zero": "",
+      "one": ""
     },
     "inventory": {
       "in_stock": "在庫あり",
@@ -157,7 +168,8 @@
       "continue_shopping": "ショッピングを開始する"
     },
     "products_count": {
-      "other": "{{ count }} 製品"
+      "other": "{{ count }} 製品",
+      "one": ""
     },
     "faceting": {
       "filters": "フィルター",
@@ -203,7 +215,8 @@
       "comment_sent": "あなたのコメントが送信されました。ショップオーナーが承認すると表示されます！",
       "comment_published": "あなたのコメントが掲載されました",
       "count": {
-        "other": "{{ count }} コメント"
+        "other": "{{ count }} コメント",
+        "one": ""
       }
     }
   },
@@ -332,9 +345,9 @@
       "weight": "重量",
       "subtotal": "小計",
       "total": "合計",
-      "taxes_and_shipping_policy_at_checkout_html": "税と<a href=\"{{ link }}\" class=\"link\">配送料<\/a>は購入手続き時に計算されます",
+      "taxes_and_shipping_policy_at_checkout_html": "税と<a href=\"{{ link }}\" class=\"link\">配送料</a>は購入手続き時に計算されます",
       "taxes_included_but_shipping_at_checkout": "税込みで、配送料は購入手続き時に計算されます",
-      "taxes_included_and_shipping_policy_html": "税込み。<a href=\"{{ link }}\" class=\"link\">配送料<\/a>は購入手続き時に計算されます。",
+      "taxes_included_and_shipping_policy_html": "税込み。<a href=\"{{ link }}\" class=\"link\">配送料</a>は購入手続き時に計算されます。",
       "taxes_and_shipping_at_checkout": "税と配送料は購入手続き時に計算されます",
       "add_order_note": "注文メモを追加",
       "edit_order_note": "注文メモを編集する",
@@ -390,10 +403,12 @@
       "no_results": "結果は見つかりませんでした"
     },
     "results_count": {
-      "other": "{{count}}件"
+      "other": "{{count}}件",
+      "one": ""
     },
     "results_count_for_terms": {
-      "other": "「{{ terms }}」の検索結果{{count}}件"
+      "other": "「{{ terms }}」の検索結果{{count}}件",
+      "one": ""
     }
   },
   "gift_card": {
@@ -438,7 +453,7 @@
   },
   "sections": {
     "before_after": {
-      "not_enough_blocks": "ビフォー\/アフターの比較を表示するには、セクションにブロックを追加してください。",
+      "not_enough_blocks": "ビフォー/アフターの比較を表示するには、セクションにブロックを追加してください。",
       "percentage_shown": "アフター写真の表示率",
       "cursor_accessibility_text": "左右の矢印キーを使用して、beforeとafterの写真を切り替えてください。"
     },

@@ -56,12 +56,12 @@
               max_image_zoom_level: section.settings.max_image_zoom_level -%}
         {%- endif -%}
 
-        {%- render 'product-info', 
-          product: product, 
+        {%- render 'product-info',
+          product: product,
           product_form_id: product_form_id,
-          center_basic_info: section.settings.center_basic_info, 
-          has_content_below_gallery: has_content_below_gallery, 
-          context: 'main_product' 
+          center_basic_info: section.settings.center_basic_info,
+          has_content_below_gallery: has_content_below_gallery,
+          context: 'main_product'
         -%}
 
         {%- comment -%}On Prestige, some content may be on the left part below the product gallery{%- endcomment -%}
@@ -77,7 +77,7 @@
                   {%- if product.description != blank -%}
                     {%- if block.settings.collapse_content -%}
                       {%- assign accordion_title = 'product.general.description' | t -%}
-                      {%- render 'accordion', title: accordion_title, content: product.description, prose_content: true, size: 'lg', block: block -%}
+                      {%- render 'accordion', title: accordion_title, content: product.description, prose_content: true, size: 'lg', block: block, open: block.settings.open_by_default -%}
                     {%- else -%}
                       <div class="product-content-below-gallery__description prose">
                         {{- product.description -}}
@@ -466,6 +466,12 @@ quick buy information in a template, that will be extracted in JS, which ensures
           "type": "checkbox",
           "id": "collapse_content",
           "label": "t:sections.main_product.blocks.description.collapse_content",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "open_by_default",
+          "label": "t:sections.main_product.blocks.description.open_by_default",
           "default": false
         },
         {

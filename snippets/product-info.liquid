@@ -205,7 +205,7 @@ Supported variables
             {%- if product_description != blank -%}
               {%- if block.settings.collapse_content -%}
                 {%- assign accordion_title = 'product.general.description' | t -%}
-                {%- render 'accordion', title: accordion_title, content: product_description, prose_content: true, block: block -%}
+                {%- render 'accordion', title: accordion_title, content: product_description, prose_content: true, block: block, open: block.settings.open_by_default -%}
               {%- else -%}
                 <div class="prose">
                   {{- product_description -}}
@@ -406,7 +406,7 @@ Supported variables
               assign accordion_content = block.settings.page.content | default: block.settings.liquid | default: block.settings.content
 
               if accordion_title != blank and accordion_content != blank
-                render 'accordion', title: accordion_title, content: accordion_content, prose_content: true, icon: block.settings.icon, custom_icon: block.settings.custom_icon, block: block
+                render 'accordion', title: accordion_title, content: accordion_content, prose_content: true, icon: block.settings.icon, custom_icon: block.settings.custom_icon, block: block, open: block.settings.open_by_default
               endif
             -%}
 
@@ -509,7 +509,7 @@ Supported variables
             {%- endif -%}
         {%- endcase -%}
       {%- endcapture -%}
-      
+
       {%- if allow_block_group and inside_block_group_context == false -%}
         {%- assign inside_block_group_context = true -%}
         <div class="product-info__block-group {{ block_group_class }}" data-group-type="{{ block_group_name }}">

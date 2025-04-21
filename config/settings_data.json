@@ -267,7 +267,14 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".header-sidebar::part(content) {opacity: 95%;}"
+      ".header-sidebar::part(content) {opacity: 95%;}",
+      " #alvanaProduct h3 {margin: 40px 0 16px; padding-left: 12px; border-left: 3px solid #000000; color: #000000; text-align: left; }",
+      " #alvanaProduct p {margin: 8px 0; line-height: 1.6em; }",
+      " #alvanaProduct table {width: 100%; margin-top: 16px; border-collapse: collapse; }",
+      " #alvanaProduct th {border: 1px solid #e2e2e2; text-align: center; padding: 5px; }",
+      " #alvanaProduct td {border: 1px solid #e2e2e2; text-align: center; padding: 5px; }",
+      " #alvanaProduct tr {border: 1px solid #e2e2e2; }",
+      " #alvanaProduct .table_title {background-color: rgba(18, 18, 18, 0.04); font-weight: bold; }"
     ]
   }
 }

@@ -50,10 +50,12 @@
         },
         "quantity_selector": {
           "type": "quantity_selector",
+          "disabled": true,
           "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
+          "disabled": true,
           "settings": {
             "show_payment_button": true,
             "show_gift_card_recipient": true,
@@ -61,6 +63,26 @@
             "atc_button_text_color": "",
             "payment_button_background": "",
             "payment_button_text_color": ""
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "collapse_content": true,
+            "open_by_default": true,
+            "show_below_gallery": false
+          }
+        },
+        "accordion_Vettdq": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": false,
+            "icon": "none",
+            "title": "",
+            "content": "<p>Share some content to your customers about your products.</p>",
+            "liquid": "",
+            "page": "{{ product.metafields.custom.material_page.value }}",
+            "open_by_default": true
           }
         },
         "complementary_products": {
@@ -73,23 +95,17 @@
             "show_quick_buy": true
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {
-            "collapse_content": true,
-            "open_by_default": true,
-            "show_below_gallery": true
-          }
-        },
         "accordion_Jy8j4X": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "show_below_gallery": true,
             "icon": "none",
             "title": "Size Table",
             "content": "",
             "liquid": "{{ product.metafields.custom.size_table_html }}",
-            "page": ""
+            "page": "",
+            "open_by_default": false
           }
         },
         "accordion_DCya7w": {
@@ -100,7 +116,20 @@
             "title": "Product Care",
             "content": "{{ product.metafields.custom.product_care | metafield_tag }}",
             "liquid": "",
-            "page": ""
+            "page": "",
+            "open_by_default": false
+          }
+        },
+        "accordion_DxH7EQ": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": true,
+            "icon": "none",
+            "title": "",
+            "content": "",
+            "liquid": "",
+            "page": "disclaimers",
+            "open_by_default": false
           }
         }
       },
@@ -113,10 +142,12 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "complementary_products",
         "description",
+        "accordion_Vettdq",
+        "complementary_products",
         "accordion_Jy8j4X",
-        "accordion_DCya7w"
+        "accordion_DCya7w",
+        "accordion_DxH7EQ"
       ],
       "settings": {
         "color_scheme": "",

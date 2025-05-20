@@ -88,6 +88,16 @@
         "name": "multi_line_text_field",
         "category": "TEXT"
       }
+    },
+    {
+      "key": "material_page",
+      "namespace": "custom",
+      "name": "material_page",
+      "description": "",
+      "type": {
+        "name": "page_reference",
+        "category": "REFERENCE"
+      }
     }
   ],
   "variant": [],

@@ -27,7 +27,7 @@
     "text_font_size_desktop": 14,
     "text_font_letter_spacing": 0,
     "button_letter_spacing": 18,
-    "color_swatch_config": "PINK GOLD: #D7A9A3\nBLACK: #000000\nINDIGO: #4B0082\nGRAY×BLACK: #7f7f7f\nBLUE: #0000FF\nECRE: #C2B280\nNATURAL: #EDE6D6\nBROWN: #A52A2A\nDARK GRAY: #A9A9A9\nINK BLACK: #101010",
+    "color_swatch_config": "PINK GOLD: #D7A9A3\nBLACK: #000000\nINDIGO: #4B0082\nGRAY×BLACK: #7f7f7f\nBLUE: #0000FF\nECRE: #C2B280\nNATURAL: #EDE6D6\nBROWN: #A52A2A\nDARK GRAY: #A9A9A9\nINK BLACK: #101010\nVINTAGE PINK: #e5bcb6\nSTONE NAVY: #9e96aa",
     "show_sold_out_badge": false,
     "discount_mode": "percentage",
     "cart_type": "drawer",

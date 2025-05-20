@@ -44,18 +44,16 @@
             "hide_sold_out_variants": false,
             "selector_style": "block",
             "swatch_selector_style": "swatch",
-            "variant_image_options": "",
+            "variant_image_options": "カラー",
             "size_chart_page": ""
           }
         },
         "quantity_selector": {
           "type": "quantity_selector",
-          "disabled": true,
           "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
-          "disabled": true,
           "settings": {
             "show_payment_button": true,
             "show_gift_card_recipient": true,
@@ -97,7 +95,6 @@
         },
         "accordion_Jy8j4X": {
           "type": "accordion",
-          "disabled": true,
           "settings": {
             "show_below_gallery": true,
             "icon": "none",

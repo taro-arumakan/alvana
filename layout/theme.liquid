@@ -29,14 +29,6 @@
       <link rel="preload" href="{{ settings.text_font | font_url }}" as="font" type="font/woff2" crossorigin>
     {%- endunless -%}
 
-    <style>
-      @font-face {
-        font-family: 'Marcellus';
-        src: url("{{ 'Marcellus-Regular.ttf' | asset_url }}") format('truetype');
-        font-weight: normal;
-      }
-    </style>
-
     {%- render 'social-meta-tags' -%}
     {%- render 'microdata-schema' -%}
     {%- render 'css-variables' -%}

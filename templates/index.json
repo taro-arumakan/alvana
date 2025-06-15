@@ -15,14 +15,14 @@
         "image_3VVayg": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/2025ss_64_jpg.webp",
+            "image": "shopify://shop_images/2025aw_25.jpg",
             "subheading": "",
-            "title": "2025 Spring & Summer",
+            "title": "2025 Autumn & Winter",
             "mobile_text_position": "place-self-end text-end",
             "desktop_text_position": "sm:place-self-end sm:text-end",
             "content_max_width": 780,
             "button_1_text": "",
-            "button_1_link": "shopify://pages/2025-spring-summer",
+            "button_1_link": "shopify://pages/2025-autumn-winter",
             "button_1_style": "solid",
             "button_1_background": "#ffffff",
             "button_1_text_color": "#000000",
@@ -284,6 +284,17 @@
         "image_with_text_tLLDke": {
           "type": "image_with_text",
           "settings": {
+            "image": "shopify://shop_images/2025aw_23.jpg",
+            "title": "2025 Autumn & Winter",
+            "heading_tag": "h6",
+            "content": "",
+            "link_url": "shopify://pages/2025-autumn-winter",
+            "link_text": "Discover the Archive"
+          }
+        },
+        "image_with_text_wJYrkq": {
+          "type": "image_with_text",
+          "settings": {
             "image": "shopify://shop_images/2025ss_50.jpg",
             "title": "2025 Spring & Summer",
             "heading_tag": "h6",
@@ -328,6 +339,7 @@
       },
       "block_order": [
         "image_with_text_tLLDke",
+        "image_with_text_wJYrkq",
         "image_with_text_Cj8BA7",
         "image_with_text_JFW837",
         "image_with_text_AxacJk"
